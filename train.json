@@ -1,0 +1,724 @@
+Json
+
+[
+  {
+    "instruct": "Analisar",
+    "input": "efeito da camomila na ansiedade",
+    "output": "digraph {\n  node [shape=circle];\n  \"Camomila\" -> \"Ansiedade\" [label=\"Reduz (PLS-SEM)\"];\n  \"Camomila\" -> \"Sistema GABAérgico\" [label=\"Modula (PLS-SEM)\"];\n  \"Sistema GABAérgico\" -> \"Ansiedade\" [label=\"Inibe (NCA)\"];\n}"
+  },
+  {
+    "instruct": "Analisar",
+    "input": "efeito da passiflora no sono",
+    "output": "digraph {\n  node [shape=circle];\n  \"Passiflora\" -> \"Sono\" [label=\"Melhora (PLS-SEM)\"];\n  \"Passiflora\" -> \"Sistema GABAérgico\" [label=\"Modula (PLS-SEM)\"];\n  \"Sistema GABAérgico\" -> \"Sono\" [label=\"Induz (NCA)\"];\n}"
+  },
+  {
+    "instruct": "Analisar",
+    "input": "efeito da calêndula na inflamação",
+    "output": "digraph {\n  node [shape=circle];\n  \"Calêndula\" -> \"Inflamação\" [label=\"Reduz (PLS-SEM)\"];\n  \"Calêndula\" -> \"Sistema Imune\" [label=\"Modula (PLS-SEM)\"];\n  \"Sistema Imune\" -> \"Inflamação\" [label=\"Controla (NCA)\"];\n}"
+  },
+  {
+    "instruct": "Analisar",
+    "input": "efeito da equinácea na imunidade",
+    "output": "digraph {\n  node [shape=circle];\n  \"Equinácea\" -> \"Imunidade\" [label=\"Aumenta (PLS-SEM)\"];\n  \"Equinácea\" -> \"Sistema Imune\" [label=\"Estimula (PLS-SEM)\"];\n  \"Sistema Imune\" -> \"Imunidade\" [label=\"Fortalece (NCA)\"];\n}"
+  },
+  {
+    "instruct": "Analisar",
+    "input": "sinergia entre camomila e passiflora",
+    "output": "digraph {\n  node [shape=circle];\n  \"Camomila\" -> \"Ansiedade\" [label=\"Reduz (PLS-SEM)\"];\n  \"Passiflora\" -> \"Ansiedade\" [label=\"Reduz (PLS-SEM)\"];\n  \"Camomila\" -> \"Passiflora\" [label=\"Efeito Sinérgico (PLS-SEM)\"];\n  \"Efeito Sinérgico\" -> \"Ansiedade\" [label=\"Reduz (NCA)\"];\n}"
+  },
+  {
+    "instruct": "Analisar",
+    "input": "blend personalizado e ansiedade",
+    "output": "digraph {\n  node [shape=circle];\n  \"Blend Personalizado\" -> \"Ansiedade\" [label=\"Reduz (PLS-SEM)\"];\n  \"Blend Personalizado\" -> \"Sistema Nervoso\" [label=\"Modula (PLS-SEM)\"];\n  \"Sistema Nervoso\" -> \"Ansiedade\" [label=\"Controla (NCA)\"];\n}"
+  },
+  {
+    "instruct": "Analisar",
+    "input": "blend personalizado e sono",
+    "output": "digraph {\n  node [shape=circle];\n  \"Blend Personalizado\" -> \"Sono\" [label=\"Melhora (PLS-SEM)\"];\n  \"Blend Personalizado\" -> \"Sistema Nervoso\" [label=\"Modula (PLS-SEM)\"];\n  \"Sistema Nervoso\" -> \"Sono\" [label=\"Regula (NCA)\"];\n}"
+  },
+  {
+    "instruct": "Analisar",
+    "input": "blend personalizado e sistema imune",
+    "output": "digraph {\n  node [shape=circle];\n  \"Blend Personalizado\" -> \"Sistema Imune\" [label=\"Modula (PLS-SEM)\"];\n  \"Blend Personalizado\" -> \"Saúde\" [label=\"Melhora (PLS-SEM)\"];\n  \"Sistema Imune\" -> \"Saúde\" [label=\"Protege (NCA)\"];\n}"
+  },
+  {
+    "instruct": "Analisar",
+    "input": "blend personalizado e sistema cardiovascular",
+    "output": "digraph {\n  node [shape=circle];\n  \"Blend Personalizado\" -> \"Sistema Cardiovascular\" [label=\"Modula (PLS-SEM)\"];\n  \"Blend Personalizado\" -> \"Saúde\" [label=\"Melhora (PLS-SEM)\"];\n  \"Sistema Cardiovascular\" -> \"Saúde\" [label=\"Influencia (NCA)\"];\n}"
+  },
+  {
+    "instruct": "Analisar",
+    "input": "blend personalizado e microbiota intestinal",
+    "output": "digraph {\n  node [shape=circle];\n  \"Blend Personalizado\" -> \"Microbiota Intestinal\" [label=\"Modula (PLS-SEM)\"];\n  \"Blend Personalizado\" -> \"Saúde Gastrointestinal\" [label=\"Melhora (PLS-SEM)\"];\n  \"Microbiota Intestinal\" -> \"Saúde Gastrointestinal\" [label=\"Influencia (NCA)\"];\n}"
+  },
+  {
+    "instruct": "Analisar",
+    "input": "dados de EEG e blend personalizado",
+    "output": "digraph {\n  node [shape=circle];\n  \"Padrões de EEG\" -> \"Resposta ao Blend Personalizado\" [label=\"PLS-SEM\"];\n  \"Padrões de EEG\" -> \"Ansiedade\" [label=\"NCA\"];\n  \"Composição do Blend Personalizado\" -> \"Ansiedade\" [label=\"Modula (PLS-SEM)\"];\n}"
+  },
+  {
+    "instruct": "Analisar",
+    "input": "dados de ECG e blend personalizado",
+    "output": "digraph {\n  node [shape=circle];\n  \"Variabilidade da Frequência Cardíaca (ECG)\" -> \"Resposta ao Blend Personalizado\" [label=\"PLS-SEM\"];\n  \"Variabilidade da Frequência Cardíaca (ECG)\" -> \"Ansiedade\" [label=\"NCA\"];\n  \"Composição do Blend Personalizado\" -> \"Ansiedade\" [label=\"Modula (PLS-SEM)\"];\n}"
+  },
+  {
+    "instruct": "Analisar",
+    "input": "dados de EDA e blend personalizado",
+    "output": "digraph {\n  node [shape=circle];\n  \"Condutância da Pele (EDA)\" -> \"Resposta ao Blend Personalizado\" [label=\"PLS-SEM\"];\n  \"Condutância da Pele (EDA)\" -> \"Ansiedade\" [label=\"NCA\"];\n  \"Composição do Blend Personalizado\" -> \"Ansiedade\" [label=\"Modula (PLS-SEM)\"];\n}"
+  },
+  {
+    "instruct": "Analisar",
+    "input": "dados de eye-tracking e blend personalizado",
+    "output": "digraph {\n  node [shape=circle];\n  \"Padrões de Eye-Tracking\" -> \"Resposta ao Blend Personalizado\" [label=\"PLS-SEM\"];\n  \"Padrões de Eye-Tracking\" -> \"Ansiedade\" [label=\"NCA\"];\n  \"Composição do Blend Personalizado\" -> \"Ansiedade\" [label=\"Modula (PLS-SEM)\"];\n}"
+  },
+  {
+    "instruct": "Analisar",
+    "input": "influência da camomila na microbiota",
+    "output": "digraph {\n  node [shape=circle];\n  \"Camomila\" -> \"Composição da Microbiota\" [label=\"Modula (PLS-SEM)\"];\n  \"Camomila\" -> \"Saúde Gastrointestinal\" [label=\"Melhora (PLS-SEM)\"];\n  \"Composição da Microbiota\" -> \"Saúde Gastrointestinal\" [label=\"Influencia (NCA)\"];\n}"
+  },
+  {
+    "instruct": "Analisar",
+    "input": "influência da calêndula no sistema imune",
+    "output": "digraph {\n  node [shape=circle];\n  \"Calêndula\" -> \"Resposta Imune\" [label=\"Modula (PLS-SEM)\"];\n  \"Calêndula\" -> \"Inflamação\" [label=\"Reduz (PLS-SEM)\"];\n  \"Resposta Imune\" -> \"Inflamação\" [label=\"Controla (NCA)\"];\n}"
+  },
+  {
+    "instruct": "Analisar",
+    "input": "influência da passiflora no sistema nervoso",
+    "output": "digraph {\n  node [shape=circle];\n  \"Passiflora\" -> \"Atividade do Sistema Nervoso\" [label=\"Modula (PLS-SEM)\"];\n  \"Passiflora\" -> \"Ansiedade\" [label=\"Reduz (PLS-SEM)\"];\n  \"Atividade do Sistema Nervoso\" -> \"Ansiedade\" [label=\"Regula (NCA)\"];\n}"
+  },
+  {
+    "instruct": "Analisar",
+    "input": "influência da equinácea na resposta inflamatória",
+    "output": "digraph {\n  node [shape=circle];\n  \"Equinácea\" -> \"Resposta Inflamatória\" [label=\"Modula (PLS-SEM)\"];\n  \"Equinácea\" -> \"Sistema Imune\" [label=\"Estimula (PLS-SEM)\"];\n  \"Sistema Imune\" -> \"Resposta Inflamatória\" [label=\"Controla (NCA)\"];\n}"
+  },
+  {
+    "instruct": "Analisar",
+    "input": "sinergia entre camomila, passiflora e calêndula",
+    "output": "digraph {\n  node [shape=circle];\n  \"Camomila\" -> \"Ansiedade\" [label=\"Reduz (PLS-SEM)\"];\n  \"Passiflora\" -> \"Ansiedade\" [label=\"Reduz (PLS-SEM)\"];\n  \"Calêndula\" -> \"Ansiedade\" [label=\"Reduz (PLS-SEM)\"];\n  \"Camomila\" -> \"Passiflora\" [label=\"Efeito Sinérgico (PLS-SEM)\"];\n  \"Camomila\" -> \"Calêndula\" [label=\"Efeito Sinérgico (PLS-SEM)\"];\n  \"Passiflora\" -> \"Calêndula\" [label=\"Efeito Sinérgico (PLS-SEM)\"];\n  \"Efeito Sinérgico\" -> \"Ansiedade\" [label=\"Reduz (NCA)\"];\n}"
+  },
+  {
+    "instruct": "Analisar",
+    "input": "efeito do blend personalizado na atenção",
+    "output": "digraph {\n  node [shape=circle];\n  \"Blend Personalizado\" -> \"Atenção\" [label=\"Melhora (PLS-SEM)\"];\n  \"Blend Personalizado\" -> \"Sistema Nervoso\" [label=\"Modula (PLS-SEM)\"];\n  \"Sistema Nervoso\" -> \"Atenção\" [label=\"Regula (NCA)\"];\n}"
+  },
+  {
+    "instruct": "Analisar",
+    "input": "efeito do blend personalizado na motivação",
+    "output": "digraph {\n  node [shape=circle];\n  \"Blend Personalizado\" -> \"Motivação\" [label=\"Aumenta (PLS-SEM)\"];\n  \"Blend Personalizado\" -> \"Sistema Nervoso\" [label=\"Modula (PLS-SEM)\"];\n  \"Sistema Nervoso\" -> \"Motivação\" [label=\"Influencia (NCA)\"];\n}"
+  },
+  {
+    "instruct": "Analisar",
+    "input": "efeito do blend personalizado na saúde cardiovascular",
+    "output": "digraph {\n  node [shape=circle];\n  \"Blend Personalizado\" -> \"Saúde Cardiovascular\" [label=\"Melhora (PLS-SEM)\"];\n  \"Blend Personalizado\" -> \"Sistema Cardiovascular\" [label=\"Modula (PLS-SEM)\"];\n  \"Sistema Cardiovascular\" -> \"Saúde Cardiovascular\" [label=\"Influencia (NCA)\"];\n}"
+  },
+  {
+    "instruct": "Analisar",
+    "input": "efeito do blend personalizado na saúde gastrointestinal",
+    "output": "digraph {\n  node [shape=circle];\n  \"Blend Personalizado\" -> \"Saúde Gastrointestinal\" [label=\"Melhora (PLS-SEM)\"];\n  \"Blend Personalizado\" -> \"Microbiota Intestinal\" [label=\"Modula (PLS-SEM)\"];\n  \"Microbiota Intestinal\" -> \"Saúde Gastrointestinal\" [label=\"Influencia (NCA)\"];\n}"
+  },
+  {
+    "instruct": "Analisar",
+    "input": "correlação entre EEG e blend personalizado",
+    "output": "digraph {\n  node [shape=circle];\n  \"Padrões de EEG\" -> \"Resposta ao Blend Personalizado\" [label=\"PLS-SEM\"];\n  \"Padrões de EEG\" -> \"Níveis de Ansiedade\" [label=\"NCA\"];\n  \"Composição do Blend Personalizado\" -> \"Níveis de Ansiedade\" [label=\"Modula (PLS-SEM)\"];\n}"
+  },
+  {
+    "instruct": "Analisar",
+    "input": "correlação entre ECG e blend personalizado",
+    "output": "digraph {\n  node [shape=circle];\n  \"Variabilidade da Frequência Cardíaca (ECG)\" -> \"Resposta ao Blend Personalizado\" [label=\"PLS-SEM\"];\n  \"Variabilidade da Frequência Cardíaca (ECG)\" -> \"Níveis de Ansiedade\" [label=\"NCA\"];\n  \"Composição do Blend Personalizado\" -> \"Níveis de Ansiedade\" [label=\"Modula (PLS-SEM)\"];\n}"
+  },
+  {
+    "instruct": "Analisar",
+    "input": "correlação entre EDA e blend personalizado",
+    "output": "digraph {\n  node [shape=circle];\n  \"Condutância da Pele (EDA)\" -> \"Resposta ao Blend Personalizado\" [label=\"PLS-SEM\"];\n  \"Condutância da Pele (EDA)\" -> \"Níveis de Estresse\" [label=\"NCA\"];\n  \"Composição do Blend Personalizado\" -> \"Níveis de Estresse\" [label=\"Modula (PLS-SEM)\"];\n}"
+  },
+  {
+    "instruct": "Analisar",
+    "input": "correlação entre eye-tracking e blend personalizado",
+    "output": "digraph {\n  node [shape=circle];\n  \"Padrões de Eye-Tracking\" -> \"Resposta ao Blend Personalizado\" [label=\"PLS-SEM\"];\n  \"Padrões de Eye-Tracking\" -> \"Níveis de Atenção\" [label=\"NCA\"];\n  \"Composição do Blend Personalizado\" -> \"Níveis de Atenção\" [label=\"Modula (PLS-SEM)\"];\n}"
+  },
+  {
+    "instruct": "Analisar",
+    "input": "influência da camomila no sistema cardiovascular",
+    "output": "digraph {\n  node [shape=circle];\n  \"Camomila\" -> \"Pressão Arterial\" [label=\"Reduz (PLS-SEM)\"];\n  \"Camomila\" -> \"Saúde Cardiovascular\" [label=\"Melhora (PLS-SEM)\"];\n  \"Pressão Arterial\" -> \"Saúde Cardiovascular\" [label=\"Influencia (NCA)\"];\n}"
+  },
+  {
+    "instruct": "Analisar",
+    "input": "influência da calêndula na cicatrização",
+    "output": "digraph {\n  node [shape=circle];\n  \"Calêndula\" -> \"Cicatrização\" [label=\"Acelera (PLS-SEM)\"];\n  \"Calêndula\" -> \"Inflamação\" [label=\"Reduz (PLS-SEM)\"];\n  \"Inflamação\" -> \"Cicatrização\" [label=\"Influencia (NCA)\"];\n}"
+  },
+  {
+    "instruct": "Analisar",
+    "input": "influência da passiflora na qualidade do sono",
+    "output": "digraph {\n  node [shape=circle];\n  \"Passiflora\" -> \"Qualidade do Sono\" [label=\"Melhora (PLS-SEM)\"];\n  \"Passiflora\" -> \"Níveis de Cortisol\" [label=\"Reduz (PLS-SEM)\"];\n  \"Níveis de Cortisol\" -> \"Qualidade do Sono\" [label=\"Influencia (NCA)\"];\n}"
+  },
+  {
+    "instruct": "Analisar",
+    "input": "influência da equinácea na resposta a infecções",
+    "output": "digraph {\n  node [shape=circle];\n  \"Equinácea\" -> \"Resposta a Infecções\" [label=\"Melhora (PLS-SEM)\"];\n  \"Equinácea\" -> \"Sistema Imune\" [label=\"Estimula (PLS-SEM)\"];\n  \"Sistema Imune\" -> \"Resposta a Infecções\" [label=\"Fortalece (NCA)\"];\n}"
+  },
+  {
+    "instruct": "Analisar",
+    "input": "sinergia entre camomila e calêndula",
+    "output": "digraph {\n  node [shape=circle];\n  \"Camomila\" -> \"Inflamação\" [label=\"Reduz (PLS-SEM)\"];\n  \"Calêndula\" -> \"Inflamação\" [label=\"Reduz (PLS-SEM)\"];\n  \"Camomila\" -> \"Calêndula\" [label=\"Efeito Sinérgico (PLS-SEM)\"];\n  \"Efeito Sinérgico\" -> \"Inflamação\" [label=\"Reduz (NCA)\"];\n}"
+  },
+  {
+    "instruct": "Analisar",
+    "input": "sinergia entre passiflora e equinácea",
+    "output": "digraph {\n  node [shape=circle];\n  \"Passiflora\" -> \"Sistema Imune\" [label=\"Modula (PLS-SEM)\"];\n  \"Equinácea\" -> \"Sistema Imune\" [label=\"Estimula (PLS-SEM)\"];\n  \"Passiflora\" -> \"Equinácea\" [label=\"Efeito Sinérgico (PLS-SEM)\"];\n  \"Efeito Sinérgico\" -> \"Sistema Imune\" [label=\"Fortalece (NCA)\"];\n}"
+  },
+  {
+    "instruct": "Analisar",
+    "input": "efeito do blend personalizado na digestão",
+    "output": "digraph {\n  node [shape=circle];\n  \"Blend Personalizado\" -> \"Digestão\" [label=\"Melhora (PLS-SEM)\"];\n  \"Blend Personalizado\" -> \"Microbiota Intestinal\" [label=\"Modula (PLS-SEM)\"];\n  \"Microbiota Intestinal\" -> \"Digestão\" [label=\"Influencia (NCA)\"];\n}"
+  },
+  {
+    "instruct": "Analisar",
+    "input": "efeito do blend personalizado na função cognitiva",
+    "output": "digraph {\n  node [shape=circle];\n  \"Blend Personalizado\" -> \"Função Cognitiva\" [label=\"Melhora (PLS-SEM)\"];\n  \"Blend Personalizado\" -> \"Sistema Nervoso\" [label=\"Modula (PLS-SEM)\"];\n  \"Sistema Nervoso\" -> \"Função Cognitiva\" [label=\"Controla (NCA)\"];\n}"
+  },
+  {
+    "instruct": "Analisar",
+    "input": "correlação entre EEG e humor",
+    "output": "digraph {\n  node [shape=circle];\n  \"Padrões de EEG\" -> \"Humor\" [label=\"PLS-SEM\"];\n  \"Padrões de EEG\" -> \"Níveis de Neurotransmissores\" [label=\"NCA\"];\n  \"Níveis de Neurotransmissores\" -> \"Humor\" [label=\"Influenciam (NCA)\"];\n}"
+  },
+  {
+    "instruct": "Analisar",
+    "input": "correlação entre ECG e humor",
+    "output": "digraph {\n  node [shape=circle];\n  \"Variabilidade da Frequência Cardíaca (ECG)\" -> \"Humor\" [label=\"PLS-SEM\"];\n  \"Variabilidade da Frequência Cardíaca (ECG)\" -> \"Níveis de Ansiedade\" [label=\"NCA\"];\n  \"Níveis de Ansiedade\" -> \"Humor\" [label=\"Influenciam (NCA)\"];\n}"
+  },
+  {
+    "instruct": "Analisar",
+    "input": "correlação entre EDA e humor",
+    "output": "digraph {\n  node [shape=circle];\n  \"Condutância da Pele (EDA)\" -> \"Humor\" [label=\"PLS-SEM\"];\n  \"Condutância da Pele (EDA)\" -> \"Níveis de Estresse\" [label=\"NCA\"];\n  \"Níveis de Estresse\" -> \"Humor\" [label=\"Influenciam (NCA)\"];\n}"
+  },
+  {
+    "instruct": "Analisar",
+    "input": "correlação entre eye-tracking e humor",
+    "output": "digraph {\n  node [shape=circle];\n  \"Padrões de Eye-Tracking\" -> \"Humor\" [label=\"PLS-SEM\"];\n  \"Padrões de Eye-Tracking\" -> \"Processamento Emocional\" [label=\"NCA\"];\n  \"Processamento Emocional\" -> \"Humor\" [label=\"Influencia (NCA)\"];\n}"
+  },
+  {
+    "instruct": "Analisar",
+    "input": "influência da camomila na função cognitiva",
+    "output": "digraph {\n  node [shape=circle];\n  \"Camomila\" -> \"Função Cognitiva\" [label=\"Melhora (PLS-SEM)\"];\n  \"Camomila\" -> \"Sistema Nervoso\" [label=\"Modula (PLS-SEM)\"];\n  \"Sistema Nervoso\" -> \"Função Cognitiva\" [label=\"Influencia (NCA)\"];\n}"
+  },
+  {
+    "instruct": "Analisar",
+    "input": "influência da calêndula na saúde da pele",
+    "output": "digraph {\n  node [shape=circle];\n  \"Calêndula\" -> \"Saúde da Pele\" [label=\"Melhora (PLS-SEM)\"];\n  \"Calêndula\" -> \"Inflamação\" [label=\"Reduz (PLS-SEM)\"];\n  \"Inflamação\" -> \"Saúde da Pele\" [label=\"Influencia (NCA)\"];\n}"
+  },
+  {
+    "instruct": "Analisar",
+    "input": "influência da passiflora no estresse",
+    "output": "digraph {\n  node [shape=circle];\n  \"Passiflora\" -> \"Níveis de Estresse\" [label=\"Reduz (PLS-SEM)\"];\n  \"Passiflora\" -> \"Sistema Nervoso\" [label=\"Modula (PLS-SEM)\"];\n  \"Sistema Nervoso\" -> \"Níveis de Estresse\" [label=\"Regula (NCA)\"];\n}"
+  },
+  {
+    "instruct": "Analisar",
+    "input": "influência da equinácea na duração de resfriados",
+    "output": "digraph {\n  node [shape=circle];\n  \"Equinácea\" -> \"Duração de Resfriados\" [label=\"Reduz (PLS-SEM)\"];\n  \"Equinácea\" -> \"Sistema Imune\" [label=\"Estimula (PLS-SEM)\"];\n  \"Sistema Imune\" -> \"Duração de Resfriados\" [label=\"Influencia (NCA)\"];\n}"
+  },
+  {
+    "instruct": "Analisar",
+    "input": "sinergia entre camomila, passiflora e equinácea",
+    "output": "digraph {\n  node [shape=circle];\n  \"Camomila\" -> \"Ansiedade\" [label=\"Reduz (PLS-SEM)\"];\n  \"Passiflora\" -> \"Ansiedade\" [label=\"Reduz (PLS-SEM)\"];\n  \"Equinácea\" -> \"Sistema Imune\" [label=\"Estimula (PLS-SEM)\"];\n  \"Camomila\" -> \"Passiflora\" [label=\"Efeito Sinérgico (PLS-SEM)\"];\n  \"Camomila\" -> \"Equinácea\" [label=\"Efeito Sinérgico (PLS-SEM)\"];\n  \"Passiflora\" -> \"Equinácea\" [label=\"Efeito Sinérgico (PLS-SEM)\"];\n  \"Efeito Sinérgico\" -> \"Ansiedade\" [label=\"Reduz (NCA)\"];\n  \"Efeito Sinérgico\" -> \"Sistema Imune\" [label=\"Fortalece (NCA)\"];\n}"
+  },
+  {
+    "instruct": "Analisar",
+    "input": "efeito do blend personalizado na concentração",
+    "output": "digraph {\n  node [shape=circle];\n  \"Blend Personalizado\" -> \"Concentração\" [label=\"Melhora (PLS-SEM)\"];\n  \"Blend Personalizado\" -> \"Sistema Nervoso\" [label=\"Modula (PLS-SEM)\"];\n  \"Sistema Nervoso\" -> \"Concentração\" [label=\"Influencia (NCA)\"];\n}"
+  },
+  {
+    "instruct": "Analisar",
+    "input": "efeito do blend personalizado na memória",
+    "output": "digraph {\n  node [shape=circle];\n  \"Blend Personalizado\" -> \"Memória\" [label=\"Melhora (PLS-SEM)\"];\n  \"Blend Personalizado\" -> \"Sistema Nervoso\" [label=\"Modula (PLS-SEM)\"];\n  \"Sistema Nervoso\" -> \"Memória\" [label=\"Influencia (NCA)\"];\n}"
+  },
+  {
+    "instruct": "Analisar",
+    "input": "efeito do blend personalizado na resposta ao estresse",
+    "output": "digraph {\n  node [shape=circle];\n  \"Blend Personalizado\" -> \"Resposta ao Estresse\" [label=\"Melhora (PLS-SEM)\"];\n  \"Blend Personalizado\" -> \"Sistema Nervoso\" [label=\"Modula (PLS-SEM)\"];\n  \"Sistema Nervoso\" -> \"Resposta ao Estresse\" [label=\"Regula (NCA)\"];\n}"
+  },
+  {
+    "instruct": "Analisar",
+    "input": "correlação entre EEG e qualidade do sono",
+    "output": "digraph {\n  node [shape=circle];\n  \"Padrões de EEG\" -> \"Qualidade do Sono\" [label=\"PLS-SEM\"];\n  \"Padrões de EEG\" -> \"Atividade Cerebral\" [label=\"NCA\"];\n  \"Atividade Cerebral\" -> \"Qualidade do Sono\" [label=\"Influencia (NCA)\"];\n}"
+  },
+  {
+    "instruct": "Analisar",
+    "input": "correlação entre ECG e qualidade do sono",
+    "output": "digraph {\n  node [shape=circle];\n  \"Variabilidade da Frequência Cardíaca (ECG)\" -> \"Qualidade do Sono\" [label=\"PLS-SEM\"];\n  \"Variabilidade da Frequência Cardíaca (ECG)\" -> \"Níveis de Estresse\" [label=\"NCA\"];\n  \"Níveis de Estresse\" -> \"Qualidade do Sono\" [label=\"Influenciam (NCA)\"];\n}"
+  },
+  {
+    "instruct": "Analisar",
+    "input": "correlação entre EDA e qualidade do sono",
+    "output": "digraph {\n  node [shape=circle];\n  \"Condutância da Pele (EDA)\" -> \"Qualidade do Sono\" [label=\"PLS-SEM\"];\n  \"Condutância da Pele (EDA)\" -> \"Níveis de Ansiedade\" [label=\"NCA\"];\n  \"Níveis de Ansiedade\" -> \"Qualidade do Sono\" [label=\"Influenciam (NCA)\"];\n}"
+  },
+  {
+    "instruct": "Analisar",
+    "input": "correlação entre eye-tracking e qualidade do sono",
+    "output": "digraph {\n  node [shape=circle];\n  \"Padrões de Eye-Tracking\" -> \"Qualidade do Sono\" [label=\"PLS-SEM\"];\n  \"Padrões de Eye-Tracking\" -> \"Padrões de Sono\" [label=\"NCA\"];\n  \"Padrões de Sono\" -> \"Qualidade do Sono\" [label=\"Influenciam (NCA)\"];\n}"
+  },
+  {
+    "instruct": "Analisar",
+    "input": "influência da camomila no sistema digestivo",
+    "output": "digraph {\n  node [shape=circle];\n  \"Camomila\" -> \"Saúde Digestiva\" [label=\"Melhora (PLS-SEM)\"];\n  \"Camomila\" -> \"Microbiota Intestinal\" [label=\"Modula (PLS-SEM)\"];\n  \"Microbiota Intestinal\" -> \"Saúde Digestiva\" [label=\"Influencia (NCA)\"];\n}"
+  },
+  {
+    "instruct": "Analisar",
+    "input": "influência da calêndula na resposta imune da pele",
+    "output": "digraph {\n  node [shape=circle];\n  \"Calêndula\" -> \"Resposta Imune da Pele\" [label=\"Modula (PLS-SEM)\"];\n  \"Calêndula\" -> \"Inflamação da Pele\" [label=\"Reduz (PLS-SEM)\"];\n  \"Inflamação da Pele\" -> \"Resposta Imune da Pele\" [label=\"Influencia (NCA)\"];\n}"
+  },
+  {
+    "instruct": "Analisar",
+    "input": "influência da passiflora na função cardiovascular",
+    "output": "digraph {\n  node [shape=circle];\n  \"Passiflora\" -> \"Função Cardiovascular\" [label=\"Melhora (PLS-SEM)\"];\n  \"Passiflora\" -> \"Pressão Arterial\" [label=\"Reduz (PLS-SEM)\"];\n  \"Pressão Arterial\" -> \"Função Cardiovascular\" [label=\"Influencia (NCA)\"];\n}"
+  },
+  {
+    "instruct": "Analisar",
+    "input": "influência da equinácea na prevenção de gripes",
+    "output": "digraph {\n  node [shape=circle];\n  \"Equinácea\" -> \"Prevenção de Gripes\" [label=\"Auxilia (PLS-SEM)\"];\n  \"Equinácea\" -> \"Sistema Imune\" [label=\"Estimula (PLS-SEM)\"];\n  \"Sistema Imune\" -> \"Prevenção de Gripes\" [label=\"Influencia (NCA)\"];\n}"
+  },
+  {
+    "instruct": "Analisar",
+    "input": "sinergia entre camomila e equinácea",
+    "output": "digraph {\n  node [shape=circle];\n  \"Camomila\" -> \"Sistema Imune\" [label=\"Modula (PLS-SEM)\"];\n  \"Equinácea\" -> \"Sistema Imune\" [label=\"Estimula (PLS-SEM)\"];\n  \"Camomila\" -> \"Equinácea\" [label=\"Efeito Sinérgico (PLS-SEM)\"];\n  \"Efeito Sinérgico\" -> \"Sistema Imune\" [label=\"Fortalece (NCA)\"];\n}"
+  },
+  {
+    "instruct": "Analisar",
+    "input": "sinergia entre calêndula e passiflora",
+    "output": "digraph {\n  node [shape=circle];\n  \"Calêndula\" -> \"Inflamação\" [label=\"Reduz (PLS-SEM)\"];\n  \"Passiflora\" -> \"Estresse\" [label=\"Reduz (PLS-SEM)\"];\n  \"Calêndula\" -> \"Passiflora\" [label=\"Efeito Sinérgico (PLS-SEM)\"];\n  \"Efeito Sinérgico\" -> \"Inflamação\" [label=\"Reduz (NCA)\"];\n  \"Efeito Sinérgico\" -> \"Estresse\" [label=\"Reduz (NCA)\"];\n}"
+  },
+  {
+    "instruct": "Analisar",
+    "input": "efeito do blend personalizado no humor",
+    "output": "digraph {\n  node [shape=circle];\n  \"Blend Personalizado\" -> \"Humor\" [label=\"Melhora (PLS-SEM)\"];\n  \"Blend Personalizado\" -> \"Sistema Nervoso\" [label=\"Modula (PLS-SEM)\"];\n  \"Sistema Nervoso\" -> \"Humor\" [label=\"Influencia (NCA)\"];\n}"
+  },
+  {
+    "instruct": "Analisar",
+    "input": "efeito do blend personalizado na resposta inflamatória",
+    "output": "digraph {\n  node [shape=circle];\n  \"Blend Personalizado\" -> \"Resposta Inflamatória\" [label=\"Modula (PLS-SEM)\"];\n  \"Blend Personalizado\" -> \"Sistema Imune\" [label=\"Modula (PLS-SEM)\"];\n  \"Sistema Imune\" -> \"Resposta Inflamatória\" [label=\"Controla (NCA)\"];\n}"
+  },
+  {
+    "instruct": "Analisar",
+    "input": "correlação entre EEG e concentração",
+    "output": "digraph {\n  node [shape=circle];\n  \"Padrões de EEG\" -> \"Concentração\" [label=\"PLS-SEM\"];\n  \"Padrões de EEG\" -> \"Atividade Cerebral\" [label=\"NCA\"];\n  \"Atividade Cerebral\" -> \"Concentração\" [label=\"Influencia (NCA)\"];\n}"
+  },
+  {
+    "instruct": "Analisar",
+    "input": "correlação entre ECG e concentração",
+    "output": "digraph {\n  node [shape=circle];\n  \"Variabilidade da Frequência Cardíaca (ECG)\" -> \"Concentração\" [label=\"PLS-SEM\"];\n  \"Variabilidade da Frequência Cardíaca (ECG)\" -> \"Níveis de Estresse\" [label=\"NCA\"];\n  \"Níveis de Estresse\" -> \"Concentração\" [label=\"Influenciam (NCA)\"];\n}"
+  },
+  {
+    "instruct": "Analisar",
+    "input": "correlação entre EDA e concentração",
+    "output": "digraph {\n  node [shape=circle];\n  \"Condutância da Pele (EDA)\" -> \"Concentração\" [label=\"PLS-SEM\"];\n  \"Condutância da Pele (EDA)\" -> \"Níveis de Ansiedade\" [label=\"NCA\"];\n  \"Níveis de Ansiedade\" -> \"Concentração\" [label=\"Influenciam (NCA)\"];\n}"
+  },
+  {
+    "instruct": "Analisar",
+    "input": "correlação entre eye-tracking e concentração",
+    "output": "digraph {\n  node [shape=circle];\n  \"Padrões de Eye-Tracking\" -> \"Concentração\" [label=\"PLS-SEM\"];\n  \"Padrões de Eye-Tracking\" -> \"Foco Atencional\" [label=\"NCA\"];\n  \"Foco Atencional\" -> \"Concentração\" [label=\"Influencia (NCA)\"];\n}"
+  },
+  {
+    "instruct": "Analisar",
+    "input": "influência da camomila na qualidade do sono",
+    "output": "digraph {\n  node [shape=circle];\n  \"Camomila\" -> \"Qualidade do Sono\" [label=\"Melhora (PLS-SEM)\"];\n  \"Camomila\" -> \"Sistema Nervoso\" [label=\"Modula (PLS-SEM)\"];\n  \"Sistema Nervoso\" -> \"Qualidade do Sono\" [label=\"Influencia (NCA)\"];\n}"
+  },
+  {
+    "instruct": "Analisar",
+    "input": "influência da calêndula na saúde intestinal",
+    "output": "digraph {\n  node [shape=circle];\n  \"Calêndula\" -> \"Saúde Intestinal\" [label=\"Melhora (PLS-SEM)\"];\n  \"Calêndula\" -> \"Microbiota Intestinal\" [label=\"Modula (PLS-SEM)\"];\n  \"Microbiota Intestinal\" -> \"Saúde Intestinal\" [label=\"Influencia (NCA)\"];\n}"
+  },
+  {
+    "instruct": "Analisar",
+    "input": "influência da passiflora no humor",
+    "output": "digraph {\n  node [shape=circle];\n  \"Passiflora\" -> \"Humor\" [label=\"Melhora (PLS-SEM)\"];\n  \"Passiflora\" -> \"Sistema Nervoso\" [label=\"Modula (PLS-SEM)\"];\n  \"Sistema Nervoso\" -> \"Humor\" [label=\"Influencia (NCA)\"];\n}"
+  },
+  {
+    "instruct": "Analisar",
+    "input": "influência da equinácea na resposta a alergias",
+    "output": "digraph {\n  node [shape=circle];\n  \"Equinácea\" -> \"Resposta a Alergias\" [label=\"Modula (PLS-SEM)\"];\n  \"Equinácea\" -> \"Sistema Imune\" [label=\"Modula (PLS-SEM)\"];\n  \"Sistema Imune\" -> \"Resposta a Alergias\" [label=\"Controla (NCA)\"];\n}"
+  },
+  {
+    "instruct": "Analisar",
+    "input": "sinergia entre camomila, calêndula e passiflora",
+    "output": "digraph {\n  node [shape=circle];\n  \"Camomila\" -> \"Ansiedade\" [label=\"Reduz (PLS-SEM)\"];\n  \"Calêndula\" -> \"Inflamação\" [label=\"Reduz (PLS-SEM)\"];\n  \"Passiflora\" -> \"Sono\" [label=\"Melhora (PLS-SEM)\"];\n  \"Camomila\" -> \"Calêndula\" [label=\"Efeito Sinérgico (PLS-SEM)\"];\n  \"Camomila\" -> \"Passiflora\" [label=\"Efeito Sinérgico (PLS-SEM)\"];\n  \"Calêndula\" -> \"Passiflora\" [label=\"Efeito Sinérgico (PLS-SEM)\"];\n  \"Efeito Sinérgico\" -> \"Ansiedade\" [label=\"Reduz (NCA)\"];\n  \"Efeito Sinérgico\" -> \"Inflamação\" [label=\"Reduz (NCA)\"];\n  \"Efeito Sinérgico\" -> \"Sono\" [label=\"Melhora (NCA)\"];\n}"
+  },
+  {
+    "instruct": "Analisar",
+    "input": "efeito do blend personalizado na cognição",
+    "output": "digraph {\n  node [shape=circle];\n  \"Blend Personalizado\" -> \"Cognição\" [label=\"Melhora (PLS-SEM)\"];\n  \"Blend Personalizado\" -> \"Sistema Nervoso\" [label=\"Modula (PLS-SEM)\"];\n  \"Sistema Nervoso\" -> \"Cognição\" [label=\"Influencia (NCA)\"];\n}"
+  },
+  {
+    "instruct": "Analisar",
+    "input": "efeito do blend personalizado no bem-estar",
+    "output": "digraph {\n  node [shape=circle];\n  \"Blend Personalizado\" -> \"Bem-Estar\" [label=\"Melhora (PLS-SEM)\"];\n  \"Blend Personalizado\" -> \"Saúde Mental\" [label=\"Melhora (PLS-SEM)\"];\n  \"Saúde Mental\" -> \"Bem-Estar\" [label=\"Influencia (NCA)\"];\n}"
+  },
+  {
+    "instruct": "Analisar",
+    "input": "efeito do blend personalizado na saúde geral",
+    "output": "digraph {\n  node [shape=circle];\n  \"Blend Personalizado\" -> \"Saúde Geral\" [label=\"Melhora (PLS-SEM)\"];\n  \"Blend Personalizado\" -> \"Sistema Imune\" [label=\"Modula (PLS-SEM)\"];\n  \"Blend Personalizado\" -> \"Sistema Nervoso\" [label=\"Modula (PLS-SEM)\"];\n  \"Blend Personalizado\" -> \"Sistema Cardiovascular\" [label=\"Modula (PLS-SEM)\"];\n  \"Sistema Imune\" -> \"Saúde Geral\" [label=\"Influencia (NCA)\"];\n  \"Sistema Nervoso\" -> \"Saúde Geral\" [label=\"Influencia (NCA)\"];\n  \"Sistema Cardiovascular\" -> \"Saúde Geral\" [label=\"Influencia (NCA)\"];\n}"
+  },
+  {
+    "instruct": "Analisar",
+    "input": "correlação entre EEG e estresse",
+    "output": "digraph {\n  node [shape=circle];\n  \"Padrões de EEG\" -> \"Níveis de Estresse\" [label=\"PLS-SEM\"];\n  \"Padrões de EEG\" -> \"Atividade Cerebral\" [label=\"NCA\"];\n  \"Atividade Cerebral\" -> \"Níveis de Estresse\" [label=\"Influencia (NCA)\"];\n}"
+  },
+  {
+    "instruct": "Analisar",
+    "input": "correlação entre ECG e estresse",
+    "output": "digraph {\n  node [shape=circle];\n  \"Variabilidade da Frequência Cardíaca (ECG)\" -> \"Níveis de Estresse\" [label=\"PLS-SEM\"];\n  \"Variabilidade da Frequência Cardíaca (ECG)\" -> \"Atividade Simpática\" [label=\"NCA\"];\n  \"Atividade Simpática\" -> \"Níveis de Estresse\" [label=\"Influencia (NCA)\"];\n}"
+  },
+  {
+    "instruct": "Analisar",
+    "input": "correlação entre EDA e estresse",
+    "output": "digraph {\n  node [shape=circle];\n  \"Condutância da Pele (EDA)\" -> \"Níveis de Estresse\" [label=\"PLS-SEM\"];\n  \"Condutância da Pele (EDA)\" -> \"Atividade do Sistema Nervoso Autônomo\" [label=\"NCA\"];\n  \"Atividade do Sistema Nervoso Autônomo\" -> \"Níveis de Estresse\" [label=\"Influencia (NCA)\"];\n}"
+  },
+  {
+    "instruct": "Analisar",
+    "input": "correlação entre eye-tracking e estresse",
+    "output": "digraph {\n  node [shape=circle];\n  \"Padrões de Eye-Tracking\" -> \"Níveis de Estresse\" [label=\"PLS-SEM\"];\n  \"Padrões de Eye-Tracking\" -> \"Processamento Cognitivo\" [label=\"NCA\"];\n  \"Processamento Cognitivo\" -> \"Níveis de Estresse\" [label=\"Influencia (NCA)\"];\n}"
+  },
+  {
+    "instruct": "Analisar",
+    "input": "influência da camomila na resposta ao estresse",
+    "output": "digraph {\n  node [shape=circle];\n  \"Camomila\" -> \"Resposta ao Estresse\" [label=\"Melhora (PLS-SEM)\"];\n  \"Camomila\" -> \"Sistema Nervoso\" [label=\"Modula (PLS-SEM)\"];\n  \"Sistema Nervoso\" -> \"Resposta ao Estresse\" [label=\"Influencia (NCA)\"];\n}"
+  },
+  {
+    "instruct": "Analisar",
+    "input": "influência da calêndula na cicatrização de feridas",
+    "output": "digraph {\n  node [shape=circle];\n  \"Calêndula\" -> \"Cicatrização de Feridas\" [label=\"Acelera (PLS-SEM)\"];\n  \"Calêndula\" -> \"Resposta Inflamatória\" [label=\"Modula (PLS-SEM)\"];\n  \"Resposta Inflamatória\" -> \"Cicatrização de Feridas\" [label=\"Influencia (NCA)\"];\n}"
+  },
+  {
+    "instruct": "Analisar",
+    "input": "influência da passiflora na ansiedade social",
+    "output": "digraph {\n  node [shape=circle];\n  \"Passiflora\" -> \"Ansiedade Social\" [label=\"Reduz (PLS-SEM)\"];\n  \"Passiflora\" -> \"Sistema GABAérgico\" [label=\"Modula (PLS-SEM)\"];\n  \"Sistema GABAérgico\" -> \"Ansiedade Social\" [label=\"Inibe (NCA)\"];\n}"
+  },
+  {
+    "instruct": "Analisar",
+    "input": "influência da equinácea no sistema imune adaptativo",
+    "output": "digraph {\n  node [shape=circle];\n  \"Equinácea\" -> \"Sistema Imune Adaptativo\" [label=\"Estimula (PLS-SEM)\"];\n  \"Equinácea\" -> \"Produção de Anticorpos\" [label=\"Aumenta (PLS-SEM)\"];\n  \"Produção de Anticorpos\" -> \"Sistema Imune Adaptativo\" [label=\"Fortalece (NCA)\"];\n}"
+  },
+  {
+    "instruct": "Analisar",
+    "input": "sinergia entre camomila, calêndula e equinácea",
+    "output": "digraph {\n  node [shape=circle];\n  \"Camomila\" -> \"Sistema Digestivo\" [label=\"Melhora (PLS-SEM)\"];\n  \"Calêndula\" -> \"Cicatrização\" [label=\"Acelera (PLS-SEM)\"];\n  \"Equinácea\" -> \"Sistema Imune\" [label=\"Estimula (PLS-SEM)\"];\n  \"Camomila\" -> \"Calêndula\" [label=\"Efeito Sinérgico (PLS-SEM)\"];\n  \"Camomila\" -> \"Equinácea\" [label=\"Efeito Sinérgico (PLS-SEM)\"];\n  \"Calêndula\" -> \"Equinácea\" [label=\"Efeito Sinérgico (PLS-SEM)\"];\n  \"Efeito Sinérgico\" -> \"Sistema Digestivo\" [label=\"Melhora (NCA)\"];\n  \"Efeito Sinérgico\" -> \"Cicatrização\" [label=\"Acelera (NCA)\"];\n  \"Efeito Sinérgico\" -> \"Sistema Imune\" [label=\"Fortalece (NCA)\"];\n}"
+  },
+  {
+    "instruct": "Analisar",
+    "input": "efeito do blend personalizado na memória de trabalho",
+    "output": "digraph {\n  node [shape=circle];\n  \"Blend Personalizado\" -> \"Memória de Trabalho\" [label=\"Melhora (PLS-SEM)\"];\n  \"Blend Personalizado\" -> \"Função Cognitiva\" [label=\"Melhora (PLS-SEM)\"];\n  \"Função Cognitiva\" -> \"Memória de Trabalho\" [label=\"Influencia (NCA)\"];\n}"
+  },
+  {
+    "instruct": "Analisar",
+    "input": "efeito do blend personalizado na capacidade de aprendizado",
+    "output": "digraph {\n  node [shape=circle];\n  \"Blend Personalizado\" -> \"Capacidade de Aprendizado\" [label=\"Melhora (PLS-SEM)\"];\n  \"Blend Personalizado\" -> \"Função Cognitiva\" [label=\"Melhora (PLS-SEM)\"];\n  \"Função Cognitiva\" -> \"Capacidade de Aprendizado\" [label=\"Influencia (NCA)\"];\n}"
+  },
+  {
+    "instruct": "Analisar",
+    "input": "efeito do blend personalizado na saúde mental",
+    "output": "digraph {\n  node [shape=circle];\n  \"Blend Personalizado\" -> \"Saúde Mental\" [label=\"Melhora (PLS-SEM)\"];\n  \"Blend Personalizado\" -> \"Ansiedade\" [label=\"Reduz (PLS-SEM)\"];\n  \"Blend Personalizado\" -> \"Estresse\" [label=\"Reduz (PLS-SEM)\"];\n  \"Ansiedade\" -> \"Saúde Mental\" [label=\"Influencia (NCA)\"];\n  \"Estresse\" -> \"Saúde Mental\" [label=\"Influencia (NCA)\"];\n}"
+  },
+  {
+    "instruct": "Analisar",
+    "input": "correlação entre EEG e fadiga",
+    "output": "digraph {\n  node [shape=circle];\n  \"Padrões de EEG\" -> \"Níveis de Fadiga\" [label=\"PLS-SEM\"];\n  \"Padrões de EEG\" -> \"Atividade Cerebral\" [label=\"NCA\"];\n  \"Atividade Cerebral\" -> \"Níveis de Fadiga\" [label=\"Influencia (NCA)\"];\n}"
+  },
+  {
+    "instruct": "Analisar",
+    "input": "correlação entre ECG e fadiga",
+    "output": "digraph {\n  node [shape=circle];\n  \"Variabilidade da Frequência Cardíaca (ECG)\" -> \"Níveis de Fadiga\" [label=\"PLS-SEM\"];\n  \"Variabilidade da Frequência Cardíaca (ECG)\" -> \"Esforço Físico\" [label=\"NCA\"];\n  \"Esforço Físico\" -> \"Níveis de Fadiga\" [label=\"Influencia (NCA)\"];\n}"
+  },
+  {
+    "instruct": "Analisar",
+    "input": "correlação entre EDA e fadiga",
+    "output": "digraph {\n  node [shape=circle];\n  \"Condutância da Pele (EDA)\" -> \"Níveis de Fadiga\" [label=\"PLS-SEM\"];\n  \"Condutância da Pele (EDA)\" -> \"Níveis de Estresse\" [label=\"NCA\"];\n  \"Níveis de Estresse\" -> \"Níveis de Fadiga\" [label=\"Influenciam (NCA)\"];\n}"
+  },
+  {
+    "instruct": "Analisar",
+    "input": "correlação entre eye-tracking e fadiga",
+    "output": "digraph {\n  node [shape=circle];\n  \"Padrões de Eye-Tracking\" -> \"Níveis de Fadiga\" [label=\"PLS-SEM\"];\n  \"Padrões de Eye-Tracking\" -> \"Sonolência\" [label=\"NCA\"];\n  \"Sonolência\" -> \"Níveis de Fadiga\" [label=\"Influencia (NCA)\"];\n}"
+  },
+  {
+    "instruct": "Analisar",
+    "input": "influência da camomila no humor",
+    "output": "digraph {\n  node [shape=circle];\n  \"Camomila\" -> \"Humor\" [label=\"Melhora (PLS-SEM)\"];\n  \"Camomila\" -> \"Níveis de Ansiedade\" [label=\"Reduz (PLS-SEM)\"];\n  \"Níveis de Ansiedade\" -> \"Humor\" [label=\"Influenciam (NCA)\"];\n}"
+  },
+  {
+    "instruct": "Analisar",
+    "input": "influência da calêndula na saúde digestiva",
+    "output": "digraph {\n  node [shape=circle];\n  \"Calêndula\" -> \"Saúde Digestiva\" [label=\"Melhora (PLS-SEM)\"];\n  \"Calêndula\" -> \"Microbiota Intestinal\" [label=\"Modula (PLS-SEM)\"];\n  \"Microbiota Intestinal\" -> \"Saúde Digestiva\" [label=\"Influencia (NCA)\"];\n}"
+  },
+  {
+    "instruct": "Analisar",
+    "input": "influência da passiflora na concentração",
+    "output": "digraph {\n  node [shape=circle];\n  \"Passiflora\" -> \"Concentração\" [label=\"Melhora (PLS-SEM)\"];\n  \"Passiflora\" -> \"Níveis de Ansiedade\" [label=\"Reduz (PLS-SEM)\"];\n  \"Níveis de Ansiedade\" -> \"Concentração\" [label=\"Influenciam (NCA)\"];\n}"
+  },
+  {
+    "instruct": "Analisar",
+    "input": "influência da equinácea na recuperação muscular",
+    "output": "digraph {\n  node [shape=circle];\n  \"Equinácea\" -> \"Recuperação Muscular\" [label=\"Auxilia (PLS-SEM)\"];\n  \"Equinácea\" -> \"Resposta Inflamatória\" [label=\"Modula (PLS-SEM)\"];\n  \"Resposta Inflamatória\" -> \"Recuperação Muscular\" [label=\"Influencia (NCA)\"];\n}"
+  },
+  {
+    "instruct": "Analisar",
+    "input": "sinergia entre camomila e calêndula na saúde digestiva",
+    "output": "digraph {\n  node [shape=circle];\n  \"Camomila\" -> \"Saúde Digestiva\" [label=\"Melhora (PLS-SEM)\"];\n  \"Calêndula\" -> \"Saúde Digestiva\" [label=\"Melhora (PLS-SEM)\"];\n  \"Camomila\" -> \"Calêndula\" [label=\"Efeito Sinérgico (PLS-SEM)\"];\n  \"Efeito Sinérgico\" -> \"Saúde Digestiva\" [label=\"Melhora (NCA)\"];\n}"
+  },
+  {
+    "instruct": "Analisar",
+    "input": "sinergia entre passiflora e equinácea no sistema imune",
+    "output": "digraph {\n  node [shape=circle];\n  \"Passiflora\" -> \"Sistema Imune\" [label=\"Modula (PLS-SEM)\"];\n  \"Equinácea\" -> \"Sistema Imune\" [label=\"Estimula (PLS-SEM)\"];\n  \"Passiflora\" -> \"Equinácea\" [label=\"Efeito Sinérgico (PLS-SEM)\"];\n  \"Efeito Sinérgico\" -> \"Sistema Imune\" [label=\"Fortalece (NCA)\"];\n}"
+  },
+  {
+    "instruct": "Analisar",
+    "input": "efeito do blend personalizado na performance cognitiva",
+    "output": "digraph {\n  node [shape=circle];\n  \"Blend Personalizado\" -> \"Performance Cognitiva\" [label=\"Melhora (PLS-SEM)\"];\n  \"Blend Personalizado\" -> \"Função Cognitiva\" [label=\"Melhora (PLS-SEM)\"];\n  \"Função Cognitiva\" -> \"Performance Cognitiva\" [label=\"Influencia (NCA)\"];\n}"
+  },
+  {
+    "instruct": "Analisar",
+    "input": "efeito do blend personalizado na resiliência ao estresse",
+    "output": "digraph {\n  node [shape=circle];\n  \"Blend Personalizado\" -> \"Resiliência ao Estresse\" [label=\"Aumenta (PLS-SEM)\"];\n  \"Blend Personalizado\" -> \"Resposta ao Estresse\" [label=\"Melhora (PLS-SEM)\"];\n  \"Resposta ao Estresse\" -> \"Resiliência ao Estresse\" [label=\"Influencia (NCA)\"];\n}"
+  },
+  {
+    "instruct": "Analisar",
+    "input": "correlação entre EEG e ansiedade social",
+    "output": "digraph {\n  node [shape=circle];\n  \"Padrões de EEG\" -> \"Ansiedade Social\" [label=\"PLS-SEM\"];\n  \"Padrões de EEG\" -> \"Atividade Cerebral\" [label=\"NCA\"];\n  \"Atividade Cerebral\" -> \"Ansiedade Social\" [label=\"Influencia (NCA)\"];\n}"
+  },
+  {
+    "instruct": "Analisar",
+    "input": "correlação entre ECG e ansiedade social",
+    "output": "digraph {\n  node [shape=circle];\n  \"Variabilidade da Frequência Cardíaca (ECG)\" -> \"Ansiedade Social\" [label=\"PLS-SEM\"];\n  \"Variabilidade da Frequência Cardíaca (ECG)\" -> \"Atividade Simpática\" [label=\"NCA\"];\n  \"Atividade Simpática\" -> \"Ansiedade Social\" [label=\"Influencia (NCA)\"];\n}"
+  },
+  {
+    "instruct": "Analisar",
+    "input": "correlação entre EDA e ansiedade social",
+    "output": "digraph {\n  node [shape=circle];\n  \"Condutância da Pele (EDA)\" -> \"Ansiedade Social\" [label=\"PLS-SEM\"];\n  \"Condutância da Pele (EDA)\" -> \"Sudorese\" [label=\"NCA\"];\n  \"Sudorese\" -> \"Ansiedade Social\" [label=\"Influencia (NCA)\"];\n}"
+  },
+  {
+    "instruct": "Analisar",
+    "input": "correlação entre eye-tracking e ansiedade social",
+    "output": "digraph {\n  node [shape=circle];\n  \"Padrões de Eye-Tracking\" -> \"Ansiedade Social\" [label=\"PLS-SEM\"];\n  \"Padrões de Eye-Tracking\" -> \"Evasão do Olhar\" [label=\"NCA\"];\n  \"Evasão do Olhar\" -> \"Ansiedade Social\" [label=\"Influencia (NCA)\"];\n}"
+  },
+  {
+    "instruct": "Analisar",
+    "input": "influência da camomila na memória",
+    "output": "digraph {\n  node [shape=circle];\n  \"Camomila\" -> \"Memória\" [label=\"Melhora (PLS-SEM)\"];\n  \"Camomila\" -> \"Função Cognitiva\" [label=\"Melhora (PLS-SEM)\"];\n  \"Função Cognitiva\" -> \"Memória\" [label=\"Influencia (NCA)\"];\n}"
+  },
+  {
+    "instruct": "Analisar",
+    "input": "influência da calêndula na imunidade da pele",
+    "output": "digraph {\n  node [shape=circle];\n  \"Calêndula\" -> \"Imunidade da Pele\" [label=\"Aumenta (PLS-SEM)\"];\n  \"Calêndula\" -> \"Resposta Imune\" [label=\"Modula (PLS-SEM)\"];\n  \"Resposta Imune\" -> \"Imunidade da Pele\" [label=\"Influencia (NCA)\"];\n}"
+  },
+  {
+    "instruct": "Analisar",
+    "input": "influência da passiflora no relaxamento muscular",
+    "output": "digraph {\n  node [shape=circle];\n  \"Passiflora\" -> \"Relaxamento Muscular\" [label=\"Promove (PLS-SEM)\"];\n  \"Passiflora\" -> \"Sistema Nervoso\" [label=\"Modula (PLS-SEM)\"];\n  \"Sistema Nervoso\" -> \"Relaxamento Muscular\" [label=\"Controla (NCA)\"];\n}"
+  },
+  {
+    "instruct": "Analisar",
+    "input": "influência da equinácea na redução da inflamação",
+    "output": "digraph {\n  node [shape=circle];\n  \"Equinácea\" -> \"Inflamação\" [label=\"Reduz (PLS-SEM)\"];\n  \"Equinácea\" -> \"Sistema Imune\" [label=\"Modula (PLS-SEM)\"];\n  \"Sistema Imune\" -> \"Inflamação\" [label=\"Controla (NCA)\"];\n}"
+  },
+  {
+    "instruct": "Analisar",
+    "input": "sinergia entre camomila e passiflora na qualidade do sono",
+    "output": "digraph {\n  node [shape=circle];\n  \"Camomila\" -> \"Qualidade do Sono\" [label=\"Melhora (PLS-SEM)\"];\n  \"Passiflora\" -> \"Qualidade do Sono\" [label=\"Melhora (PLS-SEM)\"];\n  \"Camomila\" -> \"Passiflora\" [label=\"Efeito Sinérgico (PLS-SEM)\"];\n  \"Efeito Sinérgico\" -> \"Qualidade do Sono\" [label=\"Melhora (NCA)\"];\n}"
+  },
+  {
+    "instruct": "Analisar",
+    "input": "sinergia entre calêndula e equinácea na cicatrização",
+    "output": "digraph {\n  node [shape=circle];\n  \"Calêndula\" -> \"Cicatrização\" [label=\"Acelera (PLS-SEM)\"];\n  \"Equinácea\" -> \"Cicatrização\" [label=\"Acelera (PLS-SEM)\"];\n  \"Calêndula\" -> \"Equinácea\" [label=\"Efeito Sinérgico (PLS-SEM)\"];\n  \"Efeito Sinérgico\" -> \"Cicatrização\" [label=\"Acelera (NCA)\"];\n}"
+  },
+  {
+    "instruct": "Analisar",
+    "input": "efeito do blend personalizado na saúde cardiovascular",
+    "output": "digraph {\n  node [shape=circle];\n  \"Blend Personalizado\" -> \"Saúde Cardiovascular\" [label=\"Melhora (PLS-SEM)\"];\n  \"Blend Personalizado\" -> \"Pressão Arterial\" [label=\"Reduz (PLS-SEM)\"];\n  \"Blend Personalizado\" -> \"Colesterol\" [label=\"Reduz (PLS-SEM)\"];\n  \"Pressão Arterial\" -> \"Saúde Cardiovascular\" [label=\"Influencia (NCA)\"];\n  \"Colesterol\" -> \"Saúde Cardiovascular\" [label=\"Influencia (NCA)\"];\n}"
+  },
+  {
+    "instruct": "Analisar",
+    "input": "efeito do blend personalizado na função imunológica",
+    "output": "digraph {\n  node [shape=circle];\n  \"Blend Personalizado\" -> \"Função Imunológica\" [label=\"Melhora (PLS-SEM)\"];\n  \"Blend Personalizado\" -> \"Sistema Imune\" [label=\"Modula (PLS-SEM)\"];\n  \"Sistema Imune\" -> \"Função Imunológica\" [label=\"Influencia (NCA)\"];\n}"
+  },
+  {
+    "instruct": "Analisar",
+    "input": "correlação entre EEG e foco",
+    "output": "digraph {\n  node [shape=circle];\n  \"Padrões de EEG\" -> \"Foco\" [label=\"PLS-SEM\"];\n  \"Padrões de EEG\" -> \"Atividade Cerebral\" [label=\"NCA\"];\n  \"Atividade Cerebral\" -> \"Foco\" [label=\"Influencia (NCA)\"];\n}"
+  },
+  {
+    "instruct": "Analisar",
+    "input": "correlação entre ECG e foco",
+    "output": "digraph {\n  node [shape=circle];\n  \"Variabilidade da Frequência Cardíaca (ECG)\" -> \"Foco\" [label=\"PLS-SEM\"];\n  \"Variabilidade da Frequência Cardíaca (ECG)\" -> \"Níveis de Estresse\" [label=\"NCA\"];\n  \"Níveis de Estresse\" -> \"Foco\" [label=\"Influenciam (NCA)\"];\n}"
+  },
+  {
+    "instruct": "Analisar",
+    "input": "correlação entre EDA e foco",
+    "output": "digraph {\n  node [shape=circle];\n  \"Condutância da Pele (EDA)\" -> \"Foco\" [label=\"PLS-SEM\"];\n  \"Condutância da Pele (EDA)\" -> \"Níveis de Ansiedade\" [label=\"NCA\"];\n  \"Níveis de Ansiedade\" -> \"Foco\" [label=\"Influenciam (NCA)\"];\n}"
+  },
+  {
+    "instruct": "Analisar",
+    "input": "correlação entre eye-tracking e foco",
+    "output": "digraph {\n  node [shape=circle];\n  \"Padrões de Eye-Tracking\" -> \"Foco\" [label=\"PLS-SEM\"];\n  \"Padrões de Eye-Tracking\" -> \"Atenção Visual\" [label=\"NCA\"];\n  \"Atenção Visual\" -> \"Foco\" [label=\"Influencia (NCA)\"];\n}"
+  },
+  {
+    "instruct": "Analisar",
+    "input": "influência da camomila no aprendizado",
+    "output": "digraph {\n  node [shape=circle];\n  \"Camomila\" -> \"Aprendizado\" [label=\"Melhora (PLS-SEM)\"];\n  \"Camomila\" -> \"Função Cognitiva\" [label=\"Melhora (PLS-SEM)\"];\n  \"Função Cognitiva\" -> \"Aprendizado\" [label=\"Influencia (NCA)\"];\n}"
+  },
+  {
+    "instruct": "Analisar",
+    "input": "influência da calêndula na regeneração da pele",
+    "output": "digraph {\n  node [shape=circle];\n  \"Calêndula\" -> \"Regeneração da Pele\" [label=\"Promove (PLS-SEM)\"];\n  \"Calêndula\" -> \"Cicatrização\" [label=\"Acelera (PLS-SEM)\"];\n  \"Cicatrização\" -> \"Regeneração da Pele\" [label=\"Influencia (NCA)\"];\n}"
+  },
+  {
+    "instruct": "Analisar",
+    "input": "influência da passiflora na redução da tensão muscular",
+    "output": "digraph {\n  node [shape=circle];\n  \"Passiflora\" -> \"Tensão Muscular\" [label=\"Reduz (PLS-SEM)\"];\n  \"Passiflora\" -> \"Relaxamento Muscular\" [label=\"Promove (PLS-SEM)\"];\n  \"Relaxamento Muscular\" -> \"Tensão Muscular\" [label=\"Reduz (NCA)\"];\n}"
+  },
+  {
+    "instruct": "Analisar",
+    "input": "influência da equinácea na resistência a infecções",
+    "output": "digraph {\n  node [shape=circle];\n  \"Equinácea\" -> \"Resistência a Infecções\" [label=\"Aumenta (PLS-SEM)\"];\n  \"Equinácea\" -> \"Sistema Imune\" [label=\"Estimula (PLS-SEM)\"];\n  \"Sistema Imune\" -> \"Resistência a Infecções\" [label=\"Influencia (NCA)\"];\n}"
+  },
+  {
+    "instruct": "Analisar",
+    "input": "sinergia entre camomila e passiflora na redução do estresse",
+    "output": "digraph {\n  node [shape=circle];\n  \"Camomila\" -> \"Estresse\" [label=\"Reduz (PLS-SEM)\"];\n  \"Passiflora\" -> \"Estresse\" [label=\"Reduz (PLS-SEM)\"];\n  \"Camomila\" -> \"Passiflora\" [label=\"Efeito Sinérgico (PLS-SEM)\"];\n  \"Efeito Sinérgico\" -> \"Estresse\" [label=\"Reduz (NCA)\"];\n}"
+  },
+  {
+    "instruct": "Analisar",
+    "input": "sinergia entre calêndula e equinácea na saúde da pele",
+    "output": "digraph {\n  node [shape=circle];\n  \"Calêndula\" -> \"Saúde da Pele\" [label=\"Melhora (PLS-SEM)\"];\n  \"Equinácea\" -> \"Saúde da Pele\" [label=\"Melhora (PLS-SEM)\"];\n  \"Calêndula\" -> \"Equinácea\" [label=\"Efeito Sinérgico (PLS-SEM)\"];\n  \"Efeito Sinérgico\" -> \"Saúde da Pele\" [label=\"Melhora (NCA)\"];\n}"
+  },
+  {
+    "instruct": "Analisar",
+    "input": "efeito do blend personalizado na qualidade de vida",
+    "output": "digraph {\n  node [shape=circle];\n  \"Blend Personalizado\" -> \"Qualidade de Vida\" [label=\"Melhora (PLS-SEM)\"];\n  \"Blend Personalizado\" -> \"Saúde Mental\" [label=\"Melhora (PLS-SEM)\"];\n  \"Blend Personalizado\" -> \"Saúde Física\" [label=\"Melhora (PLS-SEM)\"];\n  \"Saúde Mental\" -> \"Qualidade de Vida\" [label=\"Influencia (NCA)\"];\n  \"Saúde Física\" -> \"Qualidade de Vida\" [label=\"Influencia (NCA)\"];\n}"
+  },
+  {
+    "instruct": "Analisar",
+    "input": "efeito do blend personalizado na longevidade",
+    "output": "digraph {\n  node [shape=circle];\n  \"Blend Personalizado\" -> \"Longevidade\" [label=\"Aumenta (PLS-SEM)\"];\n  \"Blend Personalizado\" -> \"Saúde Geral\" [label=\"Melhora (PLS-SEM)\"];\n  \"Saúde Geral\" -> \"Longevidade\" [label=\"Influencia (NCA)\"];\n}"
+  },
+  {
+    "instruct": "Analisar",
+    "input": "correlação entre EEG e humor",
+    "output": "digraph {\n  node [shape=circle];\n  \"Padrões de EEG\" -> \"Humor\" [label=\"PLS-SEM\"];\n  \"Padrões de EEG\" -> \"Atividade Cerebral\" [label=\"NCA\"];\n  \"Atividade Cerebral\" -> \"Humor\" [label=\"Influencia (NCA)\"];\n}"
+  },
+  {
+    "instruct": "Analisar",
+    "input": "correlação entre ECG e  humor",
+    "output": "digraph {\n  node [shape=circle];\n  \"Variabilidade da Frequência Cardíaca (ECG)\" -> \"Humor\" [label=\"PLS-SEM\"];\n  \"Variabilidade da Frequência Cardíaca (ECG)\" -> \"Níveis de Estresse\" [label=\"NCA\"];\n  \"Níveis de Estresse\" -> \"Humor\" [label=\"Influenciam (NCA)\"];\n}"
+  },
+  {
+    "instruct": "Analisar",
+    "input": "correlação entre EDA e humor",
+    "output": "digraph {\n  node [shape=circle];\n  \"Condutância da Pele (EDA)\" -> \"Humor\" [label=\"PLS-SEM\"];\n  \"Condutância da Pele (EDA)\" -> \"Níveis de Ansiedade\" [label=\"NCA\"];\n  \"Níveis de Ansiedade\" -> \"Humor\" [label=\"Influenciam (NCA)\"];\n}"
+  },
+  {
+    "instruct": "Analisar",
+    "input": "correlação entre eye-tracking e humor",
+    "output": "digraph {\n  node [shape=circle];\n  \"Padrões de Eye-Tracking\" -> \"Humor\" [label=\"PLS-SEM\"];\n  \"Padrões de Eye-Tracking\" -> \"Expressões Faciais\" [label=\"NCA\"];\n  \"Expressões Faciais\" -> \"Humor\" [label=\"Refletem (NCA)\"];\n}"
+  },
+  {
+    "instruct": "Analisar",
+    "input": "influência da camomila na concentração",
+    "output": "digraph {\n  node [shape=circle];\n  \"Camomila\" -> \"Concentração\" [label=\"Melhora (PLS-SEM)\"];\n  \"Camomila\" -> \"Níveis de Ansiedade\" [label=\"Reduz (PLS-SEM)\"];\n  \"Níveis de Ansiedade\" -> \"Concentração\" [label=\"Influenciam (NCA)\"];\n}"
+  },
+  {
+    "instruct": "Analisar",
+    "input": "influência da calêndula na saúde do sistema digestivo",
+    "output": "digraph {\n  node [shape=circle];\n  \"Calêndula\" -> \"Saúde do Sistema Digestivo\" [label=\"Melhora (PLS-SEM)\"];\n  \"Calêndula\" -> \"Microbiota Intestinal\" [label=\"Modula (PLS-SEM)\"];\n  \"Microbiota Intestinal\" -> \"Saúde do Sistema Digestivo\" [label=\"Influencia (NCA)\"];\n}"
+  },
+  {
+    "instruct": "Analisar",
+    "input": "influência da passiflora na memória",
+    "output": "digraph {\n  node [shape=circle];\n  \"Passiflora\" -> \"Memória\" [label=\"Melhora (PLS-SEM)\"];\n  \"Passiflora\" -> \"Qualidade do Sono\" [label=\"Melhora (PLS-SEM)\"];\n  \"Qualidade do Sono\" -> \"Memória\" [label=\"Influencia (NCA)\"];\n}"
+  },
+  {
+    "instruct": "Analisar",
+    "input": "influência da equinácea na resposta a inflamações",
+    "output": "digraph {\n  node [shape=circle];\n  \"Equinácea\" -> \"Resposta a Inflamações\" [label=\"Modula (PLS-SEM)\"];\n  \"Equinácea\" -> \"Sistema Imune\" [label=\"Estimula (PLS-SEM)\"];\n  \"Sistema Imune\" -> \"Resposta a Inflamações\" [label=\"Controla (NCA)\"];\n}"
+  },
+  {
+    "instruct": "Analisar",
+    "input": "sinergia entre camomila e passiflora na função cognitiva",
+    "output": "digraph {\n  node [shape=circle];\n  \"Camomila\" -> \"Função Cognitiva\" [label=\"Melhora (PLS-SEM)\"];\n  \"Passiflora\" -> \"Função Cognitiva\" [label=\"Melhora (PLS-SEM)\"];\n  \"Camomila\" -> \"Passiflora\" [label=\"Efeito Sinérgico (PLS-SEM)\"];\n  \"Efeito Sinérgico\" -> \"Função Cognitiva\" [label=\"Melhora (NCA)\"];\n}"
+  },
+  {
+    "instruct": "Analisar",
+    "input": "sinergia entre calêndula e equinácea na imunidade",
+    "output": "digraph {\n  node [shape=circle];\n  \"Calêndula\" -> \"Imunidade\" [label=\"Aumenta (PLS-SEM)\"];\n  \"Equinácea\" -> \"Imunidade\" [label=\"Aumenta (PLS-SEM)\"];\n  \"Calêndula\" -> \"Equinácea\" [label=\"Efeito Sinérgico (PLS-SEM)\"];\n  \"Efeito Sinérgico\" -> \"Imunidade\" [label=\"Aumenta (NCA)\"];\n}"
+  },
+  {
+    "instruct": "Analisar",
+    "input": "efeito do blend personalizado na saúde intestinal",
+    "output": "digraph {\n  node [shape=circle];\n  \"Blend Personalizado\" -> \"Saúde Intestinal\" [label=\"Melhora (PLS-SEM)\"];\n  \"Blend Personalizado\" -> \"Microbiota Intestinal\" [label=\"Modula (PLS-SEM)\"];\n  \"Microbiota Intestinal\" -> \"Saúde Intestinal\" [label=\"Influencia (NCA)\"];\n}"
+  },
+  {
+    "instruct": "Analisar",
+    "input": "efeito do blend personalizado na resposta alérgica",
+    "output": "digraph {\n  node [shape=circle];\n  \"Blend Personalizado\" -> \"Resposta Alérgica\" [label=\"Modula (PLS-SEM)\"];\n  \"Blend Personalizado\" -> \"Sistema Imune\" [label=\"Modula (PLS-SEM)\"];\n  \"Sistema Imune\" -> \"Resposta Alérgica\" [label=\"Controla (NCA)\"];\n}"
+  },
+  {
+    "instruct": "Analisar",
+    "input": "correlação entre EEG e motivação",
+    "output": "digraph {\n  node [shape=circle];\n  \"Padrões de EEG\" -> \"Motivação\" [label=\"PLS-SEM\"];\n  \"Padrões de EEG\" -> \"Atividade Cerebral\" [label=\"NCA\"];\n  \"Atividade Cerebral\" -> \"Motivação\" [label=\"Influencia (NCA)\"];\n}"
+  },
+  {
+    "instruct": "Analisar",
+    "input": "correlação entre ECG e motivação",
+    "output": "digraph {\n  node [shape=circle];\n  \"Variabilidade da Frequência Cardíaca (ECG)\" -> \"Motivação\" [label=\"PLS-SEM\"];\n  \"Variabilidade da Frequência Cardíaca (ECG)\" -> \"Entusiasmo\" [label=\"NCA\"];\n  \"Entusiasmo\" -> \"Motivação\" [label=\"Influencia (NCA)\"];\n}"
+  },
+  {
+    "instruct": "Analisar",
+    "input": "correlação entre EDA e motivação",
+    "output": "digraph {\n  node [shape=circle];\n  \"Condutância da Pele (EDA)\" -> \"Motivação\" [label=\"PLS-SEM\"];\n  \"Condutância da Pele (EDA)\" -> \"Excitação\" [label=\"NCA\"];\n  \"Excitação\" -> \"Motivação\" [label=\"Influencia (NCA)\"];\n}"
+  },
+  {
+    "instruct": "Analisar",
+    "input": "correlação entre eye-tracking e motivação",
+    "output": "digraph {\n  node [shape=circle];\n  \"Padrões de Eye-Tracking\" -> \"Motivação\" [label=\"PLS-SEM\"];\n  \"Padrões de Eye-Tracking\" -> \"Direcionamento do Olhar\" [label=\"NCA\"];\n  \"Direcionamento do Olhar\" -> \"Motivação\" [label=\"Influencia (NCA)\"];\n}"
+  },
+  {
+    "instruct": "Analisar",
+    "input": "influência da camomila no bem-estar mental",
+    "output": "digraph {\n  node [shape=circle];\n  \"Camomila\" -> \"Bem-Estar Mental\" [label=\"Melhora (PLS-SEM)\"];\n  \"Camomila\" -> \"Ansiedade\" [label=\"Reduz (PLS-SEM)\"];\n  \"Ansiedade\" -> \"Bem-Estar Mental\" [label=\"Influencia (NCA)\"];\n}"
+  },
+  {
+    "instruct": "Analisar",
+    "input": "influência da calêndula na saúde do fígado",
+    "output": "digraph {\n  node [shape=circle];\n  \"Calêndula\" -> \"Saúde do Fígado\" [label=\"Melhora (PLS-SEM)\"];\n  \"Calêndula\" -> \"Função Hepática\" [label=\"Protege (PLS-SEM)\"];\n  \"Função Hepática\" -> \"Saúde do Fígado\" [label=\"Influencia (NCA)\"];\n}"
+  },
+  {
+    "instruct": "Analisar",
+    "input": "influência da passiflora na função digestiva",
+    "output": "digraph {\n  node [shape=circle];\n  \"Passiflora\" -> \"Função Digestiva\" [label=\"Melhora (PLS-SEM)\"];\n  \"Passiflora\" -> \"Sistema Nervoso\" [label=\"Modula (PLS-SEM)\"];\n  \"Sistema Nervoso\" -> \"Função Digestiva\" [label=\"Influencia (NCA)\"];\n}"
+  },
+  {
+    "instruct": "Analisar",
+    "input": "influência da equinácea na cicatrização de tecidos",
+    "output": "digraph {\n  node [shape=circle];\n  \"Equinácea\" -> \"Cicatrização de Tecidos\" [label=\"Acelera (PLS-SEM)\"];\n  \"Equinácea\" -> \"Sistema Imune\" [label=\"Estimula (PLS-SEM)\"];\n  \"Sistema Imune\" -> \"Cicatrização de Tecidos\" [label=\"Influencia (NCA)\"];\n}"
+  },
+  {
+    "instruct": "Analisar",
+    "input": "sinergia entre camomila e calêndula na saúde da pele",
+    "output": "digraph {\n  node [shape=circle];\n  \"Camomila\" -> \"Saúde da Pele\" [label=\"Melhora (PLS-SEM)\"];\n  \"Calêndula\" -> \"Saúde da Pele\" [label=\"Melhora (PLS-SEM)\"];\n  \"Camomila\" -> \"Calêndula\" [label=\"Efeito Sinérgico (PLS-SEM)\"];\n  \"Efeito Sinérgico\" -> \"Saúde da Pele\" [label=\"Melhora (NCA)\"];\n}"
+  },
+  {
+    "instruct": "Analisar",
+    "input": "sinergia entre passiflora e equinácea na resposta ao estresse",
+    "output": "digraph {\n  node [shape=circle];\n  \"Passiflora\" -> \"Resposta ao Estresse\" [label=\"Melhora (PLS-SEM)\"];\n  \"Equinácea\" -> \"Resposta ao Estresse\" [label=\"Melhora (PLS-SEM)\"];\n  \"Passiflora\" -> \"Equinácea\" [label=\"Efeito Sinérgico (PLS-SEM)\"];\n  \"Efeito Sinérgico\" -> \"Resposta ao Estresse\" [label=\"Melhora (NCA)\"];\n}"
+  },
+  {
+    "instruct": "Analisar",
+    "input": "efeito do blend personalizado na função hepática",
+    "output": "digraph {\n  node [shape=circle];\n  \"Blend Personalizado\" -> \"Função Hepática\" [label=\"Melhora (PLS-SEM)\"];\n  \"Blend Personalizado\" -> \"Saúde do Fígado\" [label=\"Melhora (PLS-SEM)\"];\n  \"Saúde do Fígado\" -> \"Função Hepática\" [label=\"Influencia (NCA)\"];\n}"
+  },
+  {
+    "instruct": "Analisar",
+    "input": "efeito do blend personalizado na saúde do sistema respiratório",
+    "output": "digraph {\n  node [shape=circle];\n  \"Blend Personalizado\" -> \"Saúde do Sistema Respiratório\" [label=\"Melhora (PLS-SEM)\"];\n  \"Blend Personalizado\" -> \"Sistema Imune\" [label=\"Modula (PLS-SEM)\"];\n  \"Sistema Imune\" -> \"Saúde do Sistema Respiratório\" [label=\"Influencia (NCA)\"];\n}"
+  },
+  {
+    "instruct": "Analisar",
+    "input": "correlação entre EEG e qualidade de vida",
+    "output": "digraph {\n  node [shape=circle];\n  \"Padrões de EEG\" -> \"Qualidade de Vida\" [label=\"PLS-SEM\"];\n  \"Padrões de EEG\" -> \"Bem-Estar Mental\" [label=\"NCA\"];\n  \"Bem-Estar Mental\" -> \"Qualidade de Vida\" [label=\"Influencia (NCA)\"];\n}"
+  }
+]

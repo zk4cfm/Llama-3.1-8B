@@ -1,252 +1,252 @@
 [
-  {
+{
 instruct: "Analisar",
 input: "efeito da camomila na função cognitiva",
-output: "digraph    {\n  node [shape=circle, fontname=\"Calibri Bold\"];\n  edge [fontname=\"Calibri Bold\"];\n  \"Camomila\" -> \"Função Cognitiva\" [label=\"Melhora (PLS-SEM)\", color=\"blue\"];\n  \"Camomila\" -> \"Sistema Nervoso\" [label=\"Modula (PLS-SEM)\", color=\"blue\", style=\"dashed\"];\n  \"Sistema Nervoso\" -> \"Função Cognitiva\" [label=\"Influencia (NCA)\", color=\"blue\"];\n}"
-  },
-  {
+output: "digraph  {\n  node [shape=circle, fontname=\"Calibri Bold\"];\n  edge [fontname=\"Calibri Bold\"];\n  \"Camomila\" -> \"Função Cognitiva\" [label=\"Melhora (PLS-SEM)\", color=\"blue\"];\n  \"Camomila\" -> \"Sistema Nervoso\" [label=\"Modula (PLS-SEM)\", color=\"blue\", style=\"dashed\"];\n  \"Sistema Nervoso\" -> \"Função Cognitiva\" [label=\"Influencia (NCA)\", color=\"blue\"];\n}"
+},
+{
 instruct: "Analisar correlação",
 input: "dados de função cognitiva e cultivo de camomila",
-output: "digraph    {\n  node [shape=circle, fontname=\"Calibri Bold\"];\n  edge [fontname=\"Calibri Bold\"];\n  \"Parâmetros de Cultivo (Camomila)\" -> \"Função Cognitiva\" [label=\"PLS-SEM\", color=\"green\"];\n  \"Parâmetros de Cultivo (Camomila)\" -> \"Composição Química\" [label=\"NCA\", color=\"green\", style=\"dashed\"];\n  \"Composição Química\" -> \"Função Cognitiva\" [label=\"Influencia (NCA)\", color=\"green\"];\n}"
-  },
-  {
+output: "digraph  {\n  node [shape=circle, fontname=\"Calibri Bold\"];\n  edge [fontname=\"Calibri Bold\"];\n  \"Parâmetros de Cultivo (Camomila)\" -> \"Função Cognitiva\" [label=\"PLS-SEM\", color=\"green\"];\n  \"Parâmetros de Cultivo (Camomila)\" -> \"Composição Química\" [label=\"NCA\", color=\"green\", style=\"dashed\"];\n  \"Composição Química\" -> \"Função Cognitiva\" [label=\"Influencia (NCA)\", color=\"green\"];\n}"
+},
+{
 instruct: "Analisar",
 input: "influência da passiflora no estresse",
-output: "digraph    {\n  node [shape=circle, fontname=\"Calibri Bold\"];\n  edge [fontname=\"Calibri Bold\"];\n  \"Passiflora\" -> \"Níveis de Estresse\" [label=\"Reduz (PLS-SEM)\", color=\"blue\"];\n  \"Passiflora\" -> \"Sistema Nervoso\" [label=\"Modula (PLS-SEM)\", color=\"blue\", style=\"dashed\"];\n  \"Sistema Nervoso\" -> \"Níveis de Estresse\" [label=\"Regula (NCA)\", color=\"blue\"];\n}"
-  },
-  {
+output: "digraph  {\n  node [shape=circle, fontname=\"Calibri Bold\"];\n  edge [fontname=\"Calibri Bold\"];\n  \"Passiflora\" -> \"Níveis de Estresse\" [label=\"Reduz (PLS-SEM)\", color=\"blue\"];\n  \"Passiflora\" -> \"Sistema Nervoso\" [label=\"Modula (PLS-SEM)\", color=\"blue\", style=\"dashed\"];\n  \"Sistema Nervoso\" -> \"Níveis de Estresse\" [label=\"Regula (NCA)\", color=\"blue\"];\n}"
+},
+{
 instruct: "Analisar correlação",
 input: "dados de estresse e cultivo de passiflora",
-output: "digraph    {\n  node [shape=circle, fontname=\"Calibri Bold\"];\n  edge [fontname=\"Calibri Bold\"];\n  \"Parâmetros de Cultivo (Passiflora)\" -> \"Níveis de Estresse\" [label=\"PLS-SEM\", color=\"green\"];\n  \"Parâmetros de Cultivo (Passiflora)\" -> \"Teor de Flavonoides\" [label=\"NCA\", color=\"green\", style=\"dashed\"];\n  \"Teor de Flavonoides\" -> \"Níveis de Estresse\" [label=\"Influencia (NCA)\", color=\"green\"];\n}"
-  },
-  {
+output: "digraph  {\n  node [shape=circle, fontname=\"Calibri Bold\"];\n  edge [fontname=\"Calibri Bold\"];\n  \"Parâmetros de Cultivo (Passiflora)\" -> \"Níveis de Estresse\" [label=\"PLS-SEM\", color=\"green\"];\n  \"Parâmetros de Cultivo (Passiflora)\" -> \"Teor de Flavonoides\" [label=\"NCA\", color=\"green\", style=\"dashed\"];\n  \"Teor de Flavonoides\" -> \"Níveis de Estresse\" [label=\"Influencia (NCA)\", color=\"green\"];\n}"
+},
+{
 instruct: "Analisar",
 input: "efeito do blend personalizado na função cognitiva",
-output: "digraph    {\n  node [shape=circle, fontname=\"Calibri Bold\"];\n  edge [fontname=\"Calibri Bold\"];\n  \"Blend Personalizado\" -> \"Função Cognitiva\" [label=\"Melhora (PLS-SEM)\", color=\"blue\"];\n  \"Blend Personalizado\" -> \"Sistema Nervoso\" [label=\"Modula (PLS-SEM)\", color=\"blue\", style=\"dashed\"];\n  \"Sistema Nervoso\" -> \"Função Cognitiva\" [label=\"Controla (NCA)\", color=\"blue\"];\n}"
-  },
-  {
+output: "digraph  {\n  node [shape=circle, fontname=\"Calibri Bold\"];\n  edge [fontname=\"Calibri Bold\"];\n  \"Blend Personalizado\" -> \"Função Cognitiva\" [label=\"Melhora (PLS-SEM)\", color=\"blue\"];\n  \"Blend Personalizado\" -> \"Sistema Nervoso\" [label=\"Modula (PLS-SEM)\", color=\"blue\", style=\"dashed\"];\n  \"Sistema Nervoso\" -> \"Função Cognitiva\" [label=\"Controla (NCA)\", color=\"blue\"];\n}"
+},
+{
 instruct: "Analisar correlação",
 input: "dados de função cognitiva e blend personalizado",
-output: "digraph    {\n  node [shape=circle, fontname=\"Calibri Bold\"];\n  edge [fontname=\"Calibri Bold\"];\n  \"Composição do Blend Personalizado\" -> \"Função Cognitiva\" [label=\"PLS-SEM\", color=\"green\"];\n  \"Composição do Blend Personalizado\" -> \"Biodisponibilidade de Compostos\" [label=\"NCA\", color=\"green\", style=\"dashed\"];\n  \"Biodisponibilidade de Compostos\" -> \"Função Cognitiva\" [label=\"Influencia (NCA)\", color=\"green\"];\n}"
-  },
-  {
+output: "digraph  {\n  node [shape=circle, fontname=\"Calibri Bold\"];\n  edge [fontname=\"Calibri Bold\"];\n  \"Composição do Blend Personalizado\" -> \"Função Cognitiva\" [label=\"PLS-SEM\", color=\"green\"];\n  \"Composição do Blend Personalizado\" -> \"Biodisponibilidade de Compostos\" [label=\"NCA\", color=\"green\", style=\"dashed\"];\n  \"Biodisponibilidade de Compostos\" -> \"Função Cognitiva\" [label=\"Influencia (NCA)\", color=\"green\"];\n}"
+},
+{
 instruct: "Analisar",
 input: "influência da camomila na qualidade do sono",
-output: "digraph    {\n  node [shape=circle, fontname=\"Calibri Bold\"];\n  edge [fontname=\"Calibri Bold\"];\n  \"Camomila\" -> \"Qualidade do Sono\" [label=\"Melhora (PLS-SEM)\", color=\"blue\"];\n  \"Camomila\" -> \"Sistema Nervoso\" [label=\"Modula (PLS-SEM)\", color=\"blue\", style=\"dashed\"];\n  \"Sistema Nervoso\" -> \"Qualidade do Sono\" [label=\"Influencia (NCA)\", color=\"blue\"];\n}"
-  },
-  {
+output: "digraph  {\n  node [shape=circle, fontname=\"Calibri Bold\"];\n  edge [fontname=\"Calibri Bold\"];\n  \"Camomila\" -> \"Qualidade do Sono\" [label=\"Melhora (PLS-SEM)\", color=\"blue\"];\n  \"Camomila\" -> \"Sistema Nervoso\" [label=\"Modula (PLS-SEM)\", color=\"blue\", style=\"dashed\"];\n  \"Sistema Nervoso\" -> \"Qualidade do Sono\" [label=\"Influencia (NCA)\", color=\"blue\"];\n}"
+},
+{
 instruct: "Analisar correlação",
 input: "dados de qualidade do sono e cultivo de camomila",
-output: "digraph    {\n  node [shape=circle, fontname=\"Calibri Bold\"];\n  edge [fontname=\"Calibri Bold\"];\n  \"Parâmetros de Cultivo (Camomila)\" -> \"Qualidade do Sono\" [label=\"PLS-SEM\", color=\"green\"];\n  \"Parâmetros de Cultivo (Camomila)\" -> \"Concentração de Apigenina\" [label=\"NCA\", color=\"green\", style=\"dashed\"];\n  \"Concentração de Apigenina\" -> \"Qualidade do Sono\" [label=\"Influencia (NCA)\", color=\"green\"];\n}"
-  },
-  {
+output: "digraph  {\n  node [shape=circle, fontname=\"Calibri Bold\"];\n  edge [fontname=\"Calibri Bold\"];\n  \"Parâmetros de Cultivo (Camomila)\" -> \"Qualidade do Sono\" [label=\"PLS-SEM\", color=\"green\"];\n  \"Parâmetros de Cultivo (Camomila)\" -> \"Concentração de Apigenina\" [label=\"NCA\", color=\"green\", style=\"dashed\"];\n  \"Concentração de Apigenina\" -> \"Qualidade do Sono\" [label=\"Influencia (NCA)\", color=\"green\"];\n}"
+},
+{
 instruct: "Analisar",
 input: "influência da passiflora no humor",
-output: "digraph    {\n  node [shape=circle, fontname=\"Calibri Bold\"];\n  edge [fontname=\"Calibri Bold\"];\n  \"Passiflora\" -> \"Humor\" [label=\"Melhora (PLS-SEM)\", color=\"blue\"];\n  \"Passiflora\" -> \"Sistema Nervoso\" [label=\"Modula (PLS-SEM)\", color=\"blue\", style=\"dashed\"];\n  \"Sistema Nervoso\" -> \"Humor\" [label=\"Influencia (NCA)\", color=\"blue\"];\n}"
-  },
-  {
+output: "digraph  {\n  node [shape=circle, fontname=\"Calibri Bold\"];\n  edge [fontname=\"Calibri Bold\"];\n  \"Passiflora\" -> \"Humor\" [label=\"Melhora (PLS-SEM)\", color=\"blue\"];\n  \"Passiflora\" -> \"Sistema Nervoso\" [label=\"Modula (PLS-SEM)\", color=\"blue\", style=\"dashed\"];\n  \"Sistema Nervoso\" -> \"Humor\" [label=\"Influencia (NCA)\", color=\"blue\"];\n}"
+},
+{
 instruct: "Analisar correlação",
 input: "dados de humor e cultivo de passiflora",
-output: "digraph    {\n  node [shape=circle, fontname=\"Calibri Bold\"];\n  edge [fontname=\"Calibri Bold\"];\n  \"Parâmetros de Cultivo (Passiflora)\" -> \"Humor\" [label=\"PLS-SEM\", color=\"green\"];\n  \"Parâmetros de Cultivo (Passiflora)\" -> \"Níveis de Harmina\" [label=\"NCA\", color=\"green\", style=\"dashed\"];\n  \"Níveis de Harmina\" -> \"Humor\" [label=\"Influencia (NCA)\", color=\"green\"];\n}"
-  },
-  {
+output: "digraph  {\n  node [shape=circle, fontname=\"Calibri Bold\"];\n  edge [fontname=\"Calibri Bold\"];\n  \"Parâmetros de Cultivo (Passiflora)\" -> \"Humor\" [label=\"PLS-SEM\", color=\"green\"];\n  \"Parâmetros de Cultivo (Passiflora)\" -> \"Níveis de Harmina\" [label=\"NCA\", color=\"green\", style=\"dashed\"];\n  \"Níveis de Harmina\" -> \"Humor\" [label=\"Influencia (NCA)\", color=\"green\"];\n}"
+},
+{
 instruct: "Analisar",
 input: "efeito do blend personalizado na atenção",
-output: "digraph    {\n  node [shape=circle, fontname=\"Calibri Bold\"];\n  edge [fontname=\"Calibri Bold\"];\n  \"Blend Personalizado\" -> \"Atenção\" [label=\"Melhora (PLS-SEM)\", color=\"blue\"];\n  \"Blend Personalizado\" -> \"Sistema Nervoso\" [label=\"Modula (PLS-SEM)\", color=\"blue\", style=\"dashed\"];\n  \"Sistema Nervoso\" -> \"Atenção\" [label=\"Regula (NCA)\", color=\"blue\"];\n}"
-  },
-  {
+output: "digraph  {\n  node [shape=circle, fontname=\"Calibri Bold\"];\n  edge [fontname=\"Calibri Bold\"];\n  \"Blend Personalizado\" -> \"Atenção\" [label=\"Melhora (PLS-SEM)\", color=\"blue\"];\n  \"Blend Personalizado\" -> \"Sistema Nervoso\" [label=\"Modula (PLS-SEM)\", color=\"blue\", style=\"dashed\"];\n  \"Sistema Nervoso\" -> \"Atenção\" [label=\"Regula (NCA)\", color=\"blue\"];\n}"
+},
+{
 instruct: "Analisar correlação",
 input: "dados de atenção e blend personalizado",
-output: "digraph    {\n  node [shape=circle, fontname=\"Calibri Bold\"];\n  edge [fontname=\"Calibri Bold\"];\n  \"Composição do Blend Personalizado\" -> \"Níveis de Atenção\" [label=\"PLS-SEM\", color=\"green\"];\n  \"Composição do Blend Personalizado\" -> \"Perfil Fitoquímico\" [label=\"NCA\", color=\"green\", style=\"dashed\"];\n  \"Perfil Fitoquímico\" -> \"Níveis de Atenção\" [label=\"Influencia (NCA)\", color=\"green\"];\n}"
-  },
-  {
+output: "digraph  {\n  node [shape=circle, fontname=\"Calibri Bold\"];\n  edge [fontname=\"Calibri Bold\"];\n  \"Composição do Blend Personalizado\" -> \"Níveis de Atenção\" [label=\"PLS-SEM\", color=\"green\"];\n  \"Composição do Blend Personalizado\" -> \"Perfil Fitoquímico\" [label=\"NCA\", color=\"green\", style=\"dashed\"];\n  \"Perfil Fitoquímico\" -> \"Níveis de Atenção\" [label=\"Influencia (NCA)\", color=\"green\"];\n}"
+},
+{
 instruct: "Analisar",
 input: "efeito do blend personalizado na motivação",
-output: "digraph    {\n  node [shape=circle, fontname=\"Calibri Bold\"];\n  edge [fontname=\"Calibri Bold\"];\n  \"Blend Personalizado\" -> \"Motivação\" [label=\"Aumenta (PLS-SEM)\", color=\"blue\"];\n  \"Blend Personalizado\" -> \"Sistema Nervoso\" [label=\"Modula (PLS-SEM)\", color=\"blue\", style=\"dashed\"];\n  \"Sistema Nervoso\" -> \"Motivação\" [label=\"Influencia (NCA)\", color=\"blue\"];\n}"
-  },
-  {
+output: "digraph  {\n  node [shape=circle, fontname=\"Calibri Bold\"];\n  edge [fontname=\"Calibri Bold\"];\n  \"Blend Personalizado\" -> \"Motivação\" [label=\"Aumenta (PLS-SEM)\", color=\"blue\"];\n  \"Blend Personalizado\" -> \"Sistema Nervoso\" [label=\"Modula (PLS-SEM)\", color=\"blue\", style=\"dashed\"];\n  \"Sistema Nervoso\" -> \"Motivação\" [label=\"Influencia (NCA)\", color=\"blue\"];\n}"
+},
+{
 instruct: "Analisar correlação",
 input: "dados de motivação e blend personalizado",
-output: "digraph    {\n  node [shape=circle, fontname=\"Calibri Bold\"];\n  edge [fontname=\"Calibri Bold\"];\n  \"Dosagem do Blend Personalizado\" -> \"Níveis de Motivação\" [label=\"PLS-SEM\", color=\"green\"];\n  \"Dosagem do Blend Personalizado\" -> \"Concentração de Alcaloides\" [label=\"NCA\", color=\"green\", style=\"dashed\"];\n  \"Concentração de Alcaloides\" -> \"Níveis de Motivação\" [label=\"Influencia (NCA)\", color=\"green\"];\n}"
-  },
-  {
+output: "digraph  {\n  node [shape=circle, fontname=\"Calibri Bold\"];\n  edge [fontname=\"Calibri Bold\"];\n  \"Dosagem do Blend Personalizado\" -> \"Níveis de Motivação\" [label=\"PLS-SEM\", color=\"green\"];\n  \"Dosagem do Blend Personalizado\" -> \"Concentração de Alcaloides\" [label=\"NCA\", color=\"green\", style=\"dashed\"];\n  \"Concentração de Alcaloides\" -> \"Níveis de Motivação\" [label=\"Influencia (NCA)\", color=\"green\"];\n}"
+},
+{
 instruct: "Analisar",
 input: "influência da camomila na função cognitiva",
-output: "digraph    {\n  node [shape=circle, fontname=\"Calibri Bold\"];\n  edge [fontname=\"Calibri Bold\"];\n  \"Camomila\" -> \"Função Cognitiva\" [label=\"Melhora (PLS-SEM)\", color=\"blue\"];\n  \"Camomila\" -> \"Sistema Nervoso\" [label=\"Modula (PLS-SEM)\", color=\"blue\", style=\"dashed\"];\n  \"Sistema Nervoso\" -> \"Função Cognitiva\" [label=\"Influencia (NCA)\", color=\"blue\"];\n}"
-  },
-  {
+output: "digraph  {\n  node [shape=circle, fontname=\"Calibri Bold\"];\n  edge [fontname=\"Calibri Bold\"];\n  \"Camomila\" -> \"Função Cognitiva\" [label=\"Melhora (PLS-SEM)\", color=\"blue\"];\n  \"Camomila\" -> \"Sistema Nervoso\" [label=\"Modula (PLS-SEM)\", color=\"blue\", style=\"dashed\"];\n  \"Sistema Nervoso\" -> \"Função Cognitiva\" [label=\"Influencia (NCA)\", color=\"blue\"];\n}"
+},
+{
 instruct: "Analisar correlação",
 input: "dados de função cognitiva e cultivo de camomila",
-output: "digraph    {\n  node [shape=circle, fontname=\"Calibri Bold\"];\n  edge [fontname=\"Calibri Bold\"];\n  \"Parâmetros de Cultivo (Camomila)\" -> \"Função Cognitiva\" [label=\"PLS-SEM\", color=\"green\"];\n  \"Parâmetros de Cultivo (Camomila)\" -> \"Composição Química\" [label=\"NCA\", color=\"green\", style=\"dashed\"];\n  \"Composição Química\" -> \"Função Cognitiva\" [label=\"Influencia (NCA)\", color=\"green\"];\n}"
-  },
-  {
+output: "digraph  {\n  node [shape=circle, fontname=\"Calibri Bold\"];\n  edge [fontname=\"Calibri Bold\"];\n  \"Parâmetros de Cultivo (Camomila)\" -> \"Função Cognitiva\" [label=\"PLS-SEM\", color=\"green\"];\n  \"Parâmetros de Cultivo (Camomila)\" -> \"Composição Química\" [label=\"NCA\", color=\"green\", style=\"dashed\"];\n  \"Composição Química\" -> \"Função Cognitiva\" [label=\"Influencia (NCA)\", color=\"green\"];\n}"
+},
+{
 instruct: "Analisar",
 input: "influência da passiflora no estresse",
-output: "digraph    {\n  node [shape=circle, fontname=\"Calibri Bold\"];\n  edge [fontname=\"Calibri Bold\"];\n  \"Passiflora\" -> \"Níveis de Estresse\" [label=\"Reduz (PLS-SEM)\", color=\"blue\"];\n  \"Passiflora\" -> \"Sistema Nervoso\" [label=\"Modula (PLS-SEM)\", color=\"blue\", style=\"dashed\"];\n  \"Sistema Nervoso\" -> \"Níveis de Estresse\" [label=\"Regula (NCA)\", color=\"blue\"];\n}"
-  },
-  {
+output: "digraph  {\n  node [shape=circle, fontname=\"Calibri Bold\"];\n  edge [fontname=\"Calibri Bold\"];\n  \"Passiflora\" -> \"Níveis de Estresse\" [label=\"Reduz (PLS-SEM)\", color=\"blue\"];\n  \"Passiflora\" -> \"Sistema Nervoso\" [label=\"Modula (PLS-SEM)\", color=\"blue\", style=\"dashed\"];\n  \"Sistema Nervoso\" -> \"Níveis de Estresse\" [label=\"Regula (NCA)\", color=\"blue\"];\n}"
+},
+{
 instruct: "Analisar correlação",
 input: "dados de estresse e cultivo de passiflora",
-output: "digraph    {\n  node [shape=circle, fontname=\"Calibri Bold\"];\n  edge [fontname=\"Calibri Bold\"];\n  \"Parâmetros de Cultivo (Passiflora)\" -> \"Níveis de Estresse\" [label=\"PLS-SEM\", color=\"green\"];\n  \"Parâmetros de Cultivo (Passiflora)\" -> \"Teor de Flavonoides\" [label=\"NCA\", color=\"green\", style=\"dashed\"];\n  \"Teor de Flavonoides\" -> \"Níveis de Estresse\" [label=\"Influencia (NCA)\", color=\"green\"];\n}"
-  },
-  {
+output: "digraph  {\n  node [shape=circle, fontname=\"Calibri Bold\"];\n  edge [fontname=\"Calibri Bold\"];\n  \"Parâmetros de Cultivo (Passiflora)\" -> \"Níveis de Estresse\" [label=\"PLS-SEM\", color=\"green\"];\n  \"Parâmetros de Cultivo (Passiflora)\" -> \"Teor de Flavonoides\" [label=\"NCA\", color=\"green\", style=\"dashed\"];\n  \"Teor de Flavonoides\" -> \"Níveis de Estresse\" [label=\"Influencia (NCA)\", color=\"green\"];\n}"
+},
+{
 instruct: "Analisar",
 input: "efeito do blend personalizado na concentração",
-output: "digraph    {\n  node [shape=circle, fontname=\"Calibri Bold\"];\n  edge [fontname=\"Calibri Bold\"];\n  \"Blend Personalizado\" -> \"Concentração\" [label=\"Melhora (PLS-SEM)\", color=\"blue\"];\n  \"Blend Personalizado\" -> \"Sistema Nervoso\" [label=\"Modula (PLS-SEM)\", color=\"blue\", style=\"dashed\"];\n  \"Sistema Nervoso\" -> \"Concentração\" [label=\"Influencia (NCA)\", color=\"blue\"];\n}"
-  },
-  {
+output: "digraph  {\n  node [shape=circle, fontname=\"Calibri Bold\"];\n  edge [fontname=\"Calibri Bold\"];\n  \"Blend Personalizado\" -> \"Concentração\" [label=\"Melhora (PLS-SEM)\", color=\"blue\"];\n  \"Blend Personalizado\" -> \"Sistema Nervoso\" [label=\"Modula (PLS-SEM)\", color=\"blue\", style=\"dashed\"];\n  \"Sistema Nervoso\" -> \"Concentração\" [label=\"Influencia (NCA)\", color=\"blue\"];\n}"
+},
+{
 instruct: "Analisar correlação",
 input: "dados de concentração e blend personalizado",
-output: "digraph    {\n  node [shape=circle, fontname=\"Calibri Bold\"];\n  edge [fontname=\"Calibri Bold\"];\n  \"Composição do Blend Personalizado\" -> \"Níveis de Concentração\" [label=\"PLS-SEM\", color=\"green\"];\n  \"Composição do Blend Personalizado\" -> \"Proporção de Terpenos\" [label=\"NCA\", color=\"green\", style=\"dashed\"];\n  \"Proporção de Terpenos\" -> \"Níveis de Concentração\" [label=\"Influencia (NCA)\", color=\"green\"];\n}"
-  },
-  {
+output: "digraph  {\n  node [shape=circle, fontname=\"Calibri Bold\"];\n  edge [fontname=\"Calibri Bold\"];\n  \"Composição do Blend Personalizado\" -> \"Níveis de Concentração\" [label=\"PLS-SEM\", color=\"green\"];\n  \"Composição do Blend Personalizado\" -> \"Proporção de Terpenos\" [label=\"NCA\", color=\"green\", style=\"dashed\"];\n  \"Proporção de Terpenos\" -> \"Níveis de Concentração\" [label=\"Influencia (NCA)\", color=\"green\"];\n}"
+},
+{
 instruct: "Analisar",
 input: "efeito do blend personalizado na memória",
-output: "digraph    {\n  node [shape=circle, fontname=\"Calibri Bold\"];\n  edge [fontname=\"Calibri Bold\"];\n  \"Blend Personalizado\" -> \"Memória\" [label=\"Melhora (PLS-SEM)\", color=\"blue\"];\n  \"Blend Personalizado\" -> \"Sistema Nervoso\" [label=\"Modula (PLS-SEM)\", color=\"blue\", style=\"dashed\"];\n  \"Sistema Nervoso\" -> \"Memória\" [label=\"Influencia (NCA)\", color=\"blue\"];\n}"
-  },
-  {
+output: "digraph  {\n  node [shape=circle, fontname=\"Calibri Bold\"];\n  edge [fontname=\"Calibri Bold\"];\n  \"Blend Personalizado\" -> \"Memória\" [label=\"Melhora (PLS-SEM)\", color=\"blue\"];\n  \"Blend Personalizado\" -> \"Sistema Nervoso\" [label=\"Modula (PLS-SEM)\", color=\"blue\", style=\"dashed\"];\n  \"Sistema Nervoso\" -> \"Memória\" [label=\"Influencia (NCA)\", color=\"blue\"];\n}"
+},
+{
 instruct: "Analisar correlação",
 input: "dados de memória e blend personalizado",
-output: "digraph    {\n  node [shape=circle, fontname=\"Calibri Bold\"];\n  edge [fontname=\"Calibri Bold\"];\n  \"Composição do Blend Personalizado\" -> \"Capacidade de Memória\" [label=\"PLS-SEM\", color=\"green\"];\n  \"Composição do Blend Personalizado\" -> \"Teor de Compostos Bioativos\" [label=\"NCA\", color=\"green\", style=\"dashed\"];\n  \"Teor de Compostos Bioativos\" -> \"Capacidade de Memória\" [label=\"Influencia (NCA)\", color=\"green\"];\n}"
-  },
-  {
+output: "digraph  {\n  node [shape=circle, fontname=\"Calibri Bold\"];\n  edge [fontname=\"Calibri Bold\"];\n  \"Composição do Blend Personalizado\" -> \"Capacidade de Memória\" [label=\"PLS-SEM\", color=\"green\"];\n  \"Composição do Blend Personalizado\" -> \"Teor de Compostos Bioativos\" [label=\"NCA\", color=\"green\", style=\"dashed\"];\n  \"Teor de Compostos Bioativos\" -> \"Capacidade de Memória\" [label=\"Influencia (NCA)\", color=\"green\"];\n}"
+},
+{
 instruct: "Analisar",
 input: "correlação entre EEG e blend personalizado",
-output: "digraph    {\n  node [shape=circle, fontname=\"Calibri Bold\"];\n  edge [fontname=\"Calibri Bold\"];\n  \"Padrões de EEG\" -> \"Resposta ao Blend Personalizado\" [label=\"PLS-SEM\", color=\"darkorange\"];\n  \"Padrões de EEG\" -> \"Níveis de Ansiedade\" [label=\"NCA\", color=\"blue\"];\n  \"Composição do Blend Personalizado\" -> \"Níveis de Ansiedade\" [label=\"Modula (PLS-SEM)\", color=\"blue\", style=\"dashed\"];\n}"
-  },
-  {
+output: "digraph  {\n  node [shape=circle, fontname=\"Calibri Bold\"];\n  edge [fontname=\"Calibri Bold\"];\n  \"Padrões de EEG\" -> \"Resposta ao Blend Personalizado\" [label=\"PLS-SEM\", color=\"darkorange\"];\n  \"Padrões de EEG\" -> \"Níveis de Ansiedade\" [label=\"NCA\", color=\"blue\"];\n  \"Composição do Blend Personalizado\" -> \"Níveis de Ansiedade\" [label=\"Modula (PLS-SEM)\", color=\"blue\", style=\"dashed\"];\n}"
+},
+{
 instruct: "Analisar correlação",
 input: "dados de EEG e blend personalizado",
-output: "digraph    {\n  node [shape=circle, fontname=\"Calibri Bold\"];\n  edge [fontname=\"Calibri Bold\"];\n  \"Composição do Blend Personalizado\" -> \"Padrões de EEG\" [label=\"PLS-SEM\", color=\"green\"];\n  \"Composição do Blend Personalizado\" -> \"Concentração de Princípios Ativos\" [label=\"NCA\", color=\"green\", style=\"dashed\"];\n  \"Concentração de Princípios Ativos\" -> \"Padrões de EEG\" [label=\"Influencia (NCA)\", color=\"green\"];\n}"
-  },
-  {
+output: "digraph  {\n  node [shape=circle, fontname=\"Calibri Bold\"];\n  edge [fontname=\"Calibri Bold\"];\n  \"Composição do Blend Personalizado\" -> \"Padrões de EEG\" [label=\"PLS-SEM\", color=\"green\"];\n  \"Composição do Blend Personalizado\" -> \"Concentração de Princípios Ativos\" [label=\"NCA\", color=\"green\", style=\"dashed\"];\n  \"Concentração de Princípios Ativos\" -> \"Padrões de EEG\" [label=\"Influencia (NCA)\", color=\"green\"];\n}"
+},
+{
 instruct: "Analisar",
 input: "correlação entre ECG e blend personalizado",
-output: "digraph    {\n  node [shape=circle, fontname=\"Calibri Bold\"];\n  edge [fontname=\"Calibri Bold\"];\n  \"Variabilidade da Frequência Cardíaca (ECG)\" -> \"Resposta ao Blend Personalizado\" [label=\"PLS-SEM\", color=\"darkorange\"];\n  \"Variabilidade da Frequência Cardíaca (ECG)\" -> \"Níveis de Ansiedade\" [label=\"NCA\", color=\"blue\"];\n  \"Composição do Blend Personalizado\" -> \"Níveis de Ansiedade\" [label=\"Modula (PLS-SEM)\", color=\"blue\", style=\"dashed\"];\n}"
-  },
-  {
+output: "digraph  {\n  node [shape=circle, fontname=\"Calibri Bold\"];\n  edge [fontname=\"Calibri Bold\"];\n  \"Variabilidade da Frequência Cardíaca (ECG)\" -> \"Resposta ao Blend Personalizado\" [label=\"PLS-SEM\", color=\"darkorange\"];\n  \"Variabilidade da Frequência Cardíaca (ECG)\" -> \"Níveis de Ansiedade\" [label=\"NCA\", color=\"blue\"];\n  \"Composição do Blend Personalizado\" -> \"Níveis de Ansiedade\" [label=\"Modula (PLS-SEM)\", color=\"blue\", style=\"dashed\"];\n}"
+},
+{
 instruct: "Analisar correlação",
 input: "dados de ECG e blend personalizado",
-output: "digraph    {\n  node [shape=circle, fontname=\"Calibri Bold\"];\n  edge [fontname=\"Calibri Bold\"];\n  \"Dosagem do Blend Personalizado\" -> \"Variabilidade da Frequência Cardíaca (ECG)\" [label=\"PLS-SEM\", color=\"green\"];\n  \"Dosagem do Blend Personalizado\" -> \"Teor de Óleos Essenciais\" [label=\"NCA\", color=\"green\", style=\"dashed\"];\n  \"Teor de Óleos Essenciais\" -> \"Variabilidade da Frequência Cardíaca (ECG)\" [label=\"Influencia (NCA)\", color=\"green\"];\n}"
-  },
-  {
+output: "digraph  {\n  node [shape=circle, fontname=\"Calibri Bold\"];\n  edge [fontname=\"Calibri Bold\"];\n  \"Dosagem do Blend Personalizado\" -> \"Variabilidade da Frequência Cardíaca (ECG)\" [label=\"PLS-SEM\", color=\"green\"];\n  \"Dosagem do Blend Personalizado\" -> \"Teor de Óleos Essenciais\" [label=\"NCA\", color=\"green\", style=\"dashed\"];\n  \"Teor de Óleos Essenciais\" -> \"Variabilidade da Frequência Cardíaca (ECG)\" [label=\"Influencia (NCA)\", color=\"green\"];\n}"
+},
+{
 instruct: "Analisar",
 input: "correlação entre EDA e blend personalizado",
-output: "digraph    {\n  node [shape=circle, fontname=\"Calibri Bold\"];\n  edge [fontname=\"Calibri Bold\"];\n  \"Condutância da Pele (EDA)\" -> \"Resposta ao Blend Personalizado\" [label=\"PLS-SEM\", color=\"darkorange\"];\n  \"Condutância da Pele (EDA)\" -> \"Níveis de Estresse\" [label=\"NCA\", color=\"blue\"];\n  \"Composição do Blend Personalizado\" -> \"Níveis de Estresse\" [label=\"Modula (PLS-SEM)\", color=\"blue\", style=\"dashed\"];\n}"
-  },
-  {
+output: "digraph  {\n  node [shape=circle, fontname=\"Calibri Bold\"];\n  edge [fontname=\"Calibri Bold\"];\n  \"Condutância da Pele (EDA)\" -> \"Resposta ao Blend Personalizado\" [label=\"PLS-SEM\", color=\"darkorange\"];\n  \"Condutância da Pele (EDA)\" -> \"Níveis de Estresse\" [label=\"NCA\", color=\"blue\"];\n  \"Composição do Blend Personalizado\" -> \"Níveis de Estresse\" [label=\"Modula (PLS-SEM)\", color=\"blue\", style=\"dashed\"];\n}"
+},
+{
 instruct: "Analisar correlação",
 input: "dados de EDA e blend personalizado",
-output: "digraph    {\n  node [shape=circle, fontname=\"Calibri Bold\"];\n  edge [fontname=\"Calibri Bold\"];\n  \"Formulação do Blend Personalizado\" -> \"Condutância da Pele (EDA)\" [label=\"PLS-SEM\", color=\"green\"];\n  \"Formulação do Blend Personalizado\" -> \"Quantidade de Taninos\" [label=\"NCA\", color=\"green\", style=\"dashed\"];\n  \"Quantidade de Taninos\" -> \"Condutância da Pele (EDA)\" [label=\"Influencia (NCA)\", color=\"green\"];\n}"
-  },
-  {
+output: "digraph  {\n  node [shape=circle, fontname=\"Calibri Bold\"];\n  edge [fontname=\"Calibri Bold\"];\n  \"Formulação do Blend Personalizado\" -> \"Condutância da Pele (EDA)\" [label=\"PLS-SEM\", color=\"green\"];\n  \"Formulação do Blend Personalizado\" -> \"Quantidade de Taninos\" [label=\"NCA\", color=\"green\", style=\"dashed\"];\n  \"Quantidade de Taninos\" -> \"Condutância da Pele (EDA)\" [label=\"Influencia (NCA)\", color=\"green\"];\n}"
+},
+{
 instruct: "Analisar",
 input: "correlação entre eye-tracking e blend personalizado",
-output: "digraph    {\n  node [shape=circle, fontname=\"Calibri Bold\"];\n  edge [fontname=\"Calibri Bold\"];\n  \"Padrões de Eye-Tracking\" -> \"Resposta ao Blend Personalizado\" [label=\"PLS-SEM\", color=\"darkorange\"];\n  \"Padrões de Eye-Tracking\" -> \"Níveis de Atenção\" [label=\"NCA\", color=\"blue\"];\n  \"Composição do Blend Personalizado\" -> \"Níveis de Atenção\" [label=\"Modula (PLS-SEM)\", color=\"blue\", style=\"dashed\"];\n}"
-  },
-  {
+output: "digraph  {\n  node [shape=circle, fontname=\"Calibri Bold\"];\n  edge [fontname=\"Calibri Bold\"];\n  \"Padrões de Eye-Tracking\" -> \"Resposta ao Blend Personalizado\" [label=\"PLS-SEM\", color=\"darkorange\"];\n  \"Padrões de Eye-Tracking\" -> \"Níveis de Atenção\" [label=\"NCA\", color=\"blue\"];\n  \"Composição do Blend Personalizado\" -> \"Níveis de Atenção\" [label=\"Modula (PLS-SEM)\", color=\"blue\", style=\"dashed\"];\n}"
+},
+{
 instruct: "Analisar correlação",
 input: "dados de eye-tracking e blend personalizado",
-output: "digraph    {\n  node [shape=circle, fontname=\"Calibri Bold\"];\n  edge [fontname=\"Calibri Bold\"];\n  \"Sinergia do Blend Personalizado\" -> \"Padrões de Eye-Tracking\" [label=\"PLS-SEM\", color=\"green\"];\n  \"Sinergia do Blend Personalizado\" -> \"Interação entre Compostos\" [label=\"NCA\", color=\"green\", style=\"dashed\"];\n  \"Interação entre Compostos\" -> \"Padrões de Eye-Tracking\" [label=\"Influencia (NCA)\", color=\"green\"];\n}"
-  },
-  {
+output: "digraph  {\n  node [shape=circle, fontname=\"Calibri Bold\"];\n  edge [fontname=\"Calibri Bold\"];\n  \"Sinergia do Blend Personalizado\" -> \"Padrões de Eye-Tracking\" [label=\"PLS-SEM\", color=\"green\"];\n  \"Sinergia do Blend Personalizado\" -> \"Interação entre Compostos\" [label=\"NCA\", color=\"green\", style=\"dashed\"];\n  \"Interação entre Compostos\" -> \"Padrões de Eye-Tracking\" [label=\"Influencia (NCA)\", color=\"green\"];\n}"
+},
+{
 instruct: "Analisar",
 input: "correlação entre EEG e humor",
-output: "digraph    {\n  node [shape=circle, fontname=\"Calibri Bold\"];\n  edge [fontname=\"Calibri Bold\"];\n  \"Padrões de EEG\" -> \"Humor\" [label=\"PLS-SEM\", color=\"darkorange\"];\n  \"Padrões de EEG\" -> \"Níveis de Neurotransmissores\" [label=\"NCA\", color=\"blue\", style=\"dashed\"];\n  \"Níveis de Neurotransmissores\" -> \"Humor\" [label=\"Influenciam (NCA)\", color=\"blue\"];\n}"
-  },
-  {
+output: "digraph  {\n  node [shape=circle, fontname=\"Calibri Bold\"];\n  edge [fontname=\"Calibri Bold\"];\n  \"Padrões de EEG\" -> \"Humor\" [label=\"PLS-SEM\", color=\"darkorange\"];\n  \"Padrões de EEG\" -> \"Níveis de Neurotransmissores\" [label=\"NCA\", color=\"blue\", style=\"dashed\"];\n  \"Níveis de Neurotransmissores\" -> \"Humor\" [label=\"Influenciam (NCA)\", color=\"blue\"];\n}"
+},
+{
 instruct: "Analisar correlação",
 input: "dados de EEG e cultivo de camomila",
-output: "digraph    {\n  node [shape=circle, fontname=\"Calibri Bold\"];\n  edge [fontname=\"Calibri Bold\"];\n  \"Parâmetros de Cultivo (Camomila)\" -> \"Padrões de EEG\" [label=\"PLS-SEM\", color=\"green\"];\n  \"Parâmetros de Cultivo (Camomila)\" -> \"Concentração de Compostos Ativos\" [label=\"NCA\", color=\"green\", style=\"dashed\"];\n  \"Concentração de Compostos Ativos\" -> \"Padrões de EEG\" [label=\"Influencia (NCA)\", color=\"green\"];\n}"
-  },
-  {
+output: "digraph  {\n  node [shape=circle, fontname=\"Calibri Bold\"];\n  edge [fontname=\"Calibri Bold\"];\n  \"Parâmetros de Cultivo (Camomila)\" -> \"Padrões de EEG\" [label=\"PLS-SEM\", color=\"green\"];\n  \"Parâmetros de Cultivo (Camomila)\" -> \"Concentração de Compostos Ativos\" [label=\"NCA\", color=\"green\", style=\"dashed\"];\n  \"Concentração de Compostos Ativos\" -> \"Padrões de EEG\" [label=\"Influencia (NCA)\", color=\"green\"];\n}"
+},
+{
 instruct: "Analisar",
 input: "correlação entre ECG e humor",
-output: "digraph    {\n  node [shape=circle, fontname=\"Calibri Bold\"];\n  edge [fontname=\"Calibri Bold\"];\n  \"Variabilidade da Frequência Cardíaca (ECG)\" -> \"Humor\" [label=\"PLS-SEM\", color=\"darkorange\"];\n  \"Variabilidade da Frequência Cardíaca (ECG)\" -> \"Níveis de Ansiedade\" [label=\"NCA\", color=\"blue\"];\n  \"Níveis de Ansiedade\" -> \"Humor\" [label=\"Influenciam (NCA)\", color=\"blue\"];\n}"
-  },
-  {
+output: "digraph  {\n  node [shape=circle, fontname=\"Calibri Bold\"];\n  edge [fontname=\"Calibri Bold\"];\n  \"Variabilidade da Frequência Cardíaca (ECG)\" -> \"Humor\" [label=\"PLS-SEM\", color=\"darkorange\"];\n  \"Variabilidade da Frequência Cardíaca (ECG)\" -> \"Níveis de Ansiedade\" [label=\"NCA\", color=\"blue\"];\n  \"Níveis de Ansiedade\" -> \"Humor\" [label=\"Influenciam (NCA)\", color=\"blue\"];\n}"
+},
+{
 instruct: "Analisar correlação",
 input: "dados de ECG e cultivo de passiflora",
-output: "digraph    {\n  node [shape=circle, fontname=\"Calibri Bold\"];\n  edge [fontname=\"Calibri Bold\"];\n  \"Parâmetros de Cultivo (Passiflora)\" -> \"Variabilidade da Frequência Cardíaca (ECG)\" [label=\"PLS-SEM\", color=\"green\"];\n  \"Parâmetros de Cultivo (Passiflora)\" -> \"Teor de Alcaloides\" [label=\"NCA\", color=\"green\", style=\"dashed\"];\n  \"Teor de Alcaloides\" -> \"Variabilidade da Frequência Cardíaca (ECG)\" [label=\"Influencia (NCA)\", color=\"green\"];\n}"
-  },
-  {
+output: "digraph  {\n  node [shape=circle, fontname=\"Calibri Bold\"];\n  edge [fontname=\"Calibri Bold\"];\n  \"Parâmetros de Cultivo (Passiflora)\" -> \"Variabilidade da Frequência Cardíaca (ECG)\" [label=\"PLS-SEM\", color=\"green\"];\n  \"Parâmetros de Cultivo (Passiflora)\" -> \"Teor de Alcaloides\" [label=\"NCA\", color=\"green\", style=\"dashed\"];\n  \"Teor de Alcaloides\" -> \"Variabilidade da Frequência Cardíaca (ECG)\" [label=\"Influencia (NCA)\", color=\"green\"];\n}"
+},
+{
 instruct: "Analisar",
 input: "correlação entre EDA e humor",
-output: "digraph    {\n  node [shape=circle, fontname=\"Calibri Bold\"];\n  edge [fontname=\"Calibri Bold\"];\n  \"Condutância da Pele (EDA)\" -> \"Humor\" [label=\"PLS-SEM\", color=\"darkorange\"];\n  \"Condutância da Pele (EDA)\" -> \"Níveis de Estresse\" [label=\"NCA\", color=\"blue\"];\n  \"Níveis de Estresse\" -> \"Humor\" [label=\"Influenciam (NCA)\", color=\"blue\"];\n}"
-  },
-  {
+output: "digraph  {\n  node [shape=circle, fontname=\"Calibri Bold\"];\n  edge [fontname=\"Calibri Bold\"];\n  \"Condutância da Pele (EDA)\" -> \"Humor\" [label=\"PLS-SEM\", color=\"darkorange\"];\n  \"Condutância da Pele (EDA)\" -> \"Níveis de Estresse\" [label=\"NCA\", color=\"blue\"];\n  \"Níveis de Estresse\" -> \"Humor\" [label=\"Influenciam (NCA)\", color=\"blue\"];\n}"
+},
+{
 instruct: "Analisar correlação",
 input: "dados de EDA e cultivo de calêndula",
-output: "digraph    {\n  node [shape=circle, fontname=\"Calibri Bold\"];\n  edge [fontname=\"Calibri Bold\"];\n  \"Manejo do Cultivo (Calêndula)\" -> \"Condutância da Pele (EDA)\" [label=\"PLS-SEM\", color=\"green\"];\n  \"Manejo do Cultivo (Calêndula)\" -> \"Perfil de Terpenos\" [label=\"NCA\", color=\"green\", style=\"dashed\"];\n  \"Perfil de Terpenos\" -> \"Condutância da Pele (EDA)\" [label=\"Influencia (NCA)\", color=\"green\"];\n}"
-  },
-  {
+output: "digraph  {\n  node [shape=circle, fontname=\"Calibri Bold\"];\n  edge [fontname=\"Calibri Bold\"];\n  \"Manejo do Cultivo (Calêndula)\" -> \"Condutância da Pele (EDA)\" [label=\"PLS-SEM\", color=\"green\"];\n  \"Manejo do Cultivo (Calêndula)\" -> \"Perfil de Terpenos\" [label=\"NCA\", color=\"green\", style=\"dashed\"];\n  \"Perfil de Terpenos\" -> \"Condutância da Pele (EDA)\" [label=\"Influencia (NCA)\", color=\"green\"];\n}"
+},
+{
 instruct: "Analisar",
 input: "correlação entre eye-tracking e humor",
-output: "digraph    {\n  node [shape=circle, fontname=\"Calibri Bold\"];\n  edge [fontname=\"Calibri Bold\"];\n  \"Padrões de Eye-Tracking\" -> \"Humor\" [label=\"PLS-SEM\", color=\"darkorange\"];\n  \"Padrões de Eye-Tracking\" -> \"Processamento Emocional\" [label=\"NCA\", color=\"blue\"];\n  \"Processamento Emocional\" -> \"Humor\" [label=\"Influencia (NCA)\", color=\"blue\"];\n}"
-  },
-  {
+output: "digraph  {\n  node [shape=circle, fontname=\"Calibri Bold\"];\n  edge [fontname=\"Calibri Bold\"];\n  \"Padrões de Eye-Tracking\" -> \"Humor\" [label=\"PLS-SEM\", color=\"darkorange\"];\n  \"Padrões de Eye-Tracking\" -> \"Processamento Emocional\" [label=\"NCA\", color=\"blue\"];\n  \"Processamento Emocional\" -> \"Humor\" [label=\"Influencia (NCA)\", color=\"blue\"];\n}"
+},
+{
 instruct: "Analisar correlação",
 input: "dados de eye-tracking e cultivo de equinácea",
-output: "digraph    {\n  node [shape=circle, fontname=\"Calibri Bold\"];\n  edge [fontname=\"Calibri Bold\"];\n  \"Condições de Cultivo (Equinácea)\" -> \"Padrões de Eye-Tracking\" [label=\"PLS-SEM\", color=\"green\"];\n  \"Condições de Cultivo (Equinácea)\" -> \"Composição Nutricional\" [label=\"NCA\", color=\"green\", style=\"dashed\"];\n  \"Composição Nutricional\" -> \"Padrões de Eye-Tracking\" [label=\"Influencia (NCA)\", color=\"green\"];\n}"
-  },
-  {
+output: "digraph  {\n  node [shape=circle, fontname=\"Calibri Bold\"];\n  edge [fontname=\"Calibri Bold\"];\n  \"Condições de Cultivo (Equinácea)\" -> \"Padrões de Eye-Tracking\" [label=\"PLS-SEM\", color=\"green\"];\n  \"Condições de Cultivo (Equinácea)\" -> \"Composição Nutricional\" [label=\"NCA\", color=\"green\", style=\"dashed\"];\n  \"Composição Nutricional\" -> \"Padrões de Eye-Tracking\" [label=\"Influencia (NCA)\", color=\"green\"];\n}"
+},
+{
 instruct: "Analisar",
 input: "efeito do blend personalizado no humor",
-output: "digraph    {\n  node [shape=circle, fontname=\"Calibri Bold\"];\n  edge [fontname=\"Calibri Bold\"];\n  \"Blend Personalizado\" -> \"Humor\" [label=\"Melhora (PLS-SEM)\", color=\"blue\"];\n  \"Blend Personalizado\" -> \"Sistema Nervoso\" [label=\"Modula (PLS-SEM)\", color=\"blue\", style=\"dashed\"];\n  \"Sistema Nervoso\" -> \"Humor\" [label=\"Influencia (NCA)\", color=\"blue\"];\n}"
-  },
-  {
+output: "digraph  {\n  node [shape=circle, fontname=\"Calibri Bold\"];\n  edge [fontname=\"Calibri Bold\"];\n  \"Blend Personalizado\" -> \"Humor\" [label=\"Melhora (PLS-SEM)\", color=\"blue\"];\n  \"Blend Personalizado\" -> \"Sistema Nervoso\" [label=\"Modula (PLS-SEM)\", color=\"blue\", style=\"dashed\"];\n  \"Sistema Nervoso\" -> \"Humor\" [label=\"Influencia (NCA)\", color=\"blue\"];\n}"
+},
+{
 instruct: "Analisar correlação",
 input: "dados de humor e blend personalizado",
-output: "digraph    {\n  node [shape=circle, fontname=\"Calibri Bold\"];\n  edge [fontname=\"Calibri Bold\"];\n  \"Composição do Blend Personalizado\" -> \"Humor\" [label=\"PLS-SEM\", color=\"green\"];\n  \"Composição do Blend Personalizado\" -> \"Sinergia entre Plantas\" [label=\"NCA\", color=\"green\", style=\"dashed\"];\n  \"Sinergia entre Plantas\" -> \"Humor\" [label=\"Influencia (NCA)\", color=\"green\"];\n}"
-  },
-  {
+output: "digraph  {\n  node [shape=circle, fontname=\"Calibri Bold\"];\n  edge [fontname=\"Calibri Bold\"];\n  \"Composição do Blend Personalizado\" -> \"Humor\" [label=\"PLS-SEM\", color=\"green\"];\n  \"Composição do Blend Personalizado\" -> \"Sinergia entre Plantas\" [label=\"NCA\", color=\"green\", style=\"dashed\"];\n  \"Sinergia entre Plantas\" -> \"Humor\" [label=\"Influencia (NCA)\", color=\"green\"];\n}"
+},
+{
 instruct: "Analisar",
 input: "correlação entre EEG e qualidade do sono",
-output: "digraph    {\n  node [shape=circle, fontname=\"Calibri Bold\"];\n  edge [fontname=\"Calibri Bold\"];\n  \"Padrões de EEG\" -> \"Qualidade do Sono\" [label=\"PLS-SEM\", color=\"darkorange\"];\n  \"Padrões de EEG\" -> \"Atividade Cerebral\" [label=\"NCA\", color=\"blue\", style=\"dashed\"];\n  \"Atividade Cerebral\" -> \"Qualidade do Sono\" [label=\"Influencia (NCA)\", color=\"blue\"];\n}"
-  },
-  {
+output: "digraph  {\n  node [shape=circle, fontname=\"Calibri Bold\"];\n  edge [fontname=\"Calibri Bold\"];\n  \"Padrões de EEG\" -> \"Qualidade do Sono\" [label=\"PLS-SEM\", color=\"darkorange\"];\n  \"Padrões de EEG\" -> \"Atividade Cerebral\" [label=\"NCA\", color=\"blue\", style=\"dashed\"];\n  \"Atividade Cerebral\" -> \"Qualidade do Sono\" [label=\"Influencia (NCA)\", color=\"blue\"];\n}"
+},
+{
 instruct: "Analisar correlação",
 input: "dados de EEG e cultivo de passiflora",
-output: "digraph    {\n  node [shape=circle, fontname=\"Calibri Bold\"];\n  edge [fontname=\"Calibri Bold\"];\n  \"Parâmetros de Cultivo (Passiflora)\" -> \"Padrões de EEG\" [label=\"PLS-SEM\", color=\"green\"];\n  \"Parâmetros de Cultivo (Passiflora)\" -> \"Concentração de Apigenina\" [label=\"NCA\", color=\"green\", style=\"dashed\"];\n  \"Concentração de Apigenina\" -> \"Padrões de EEG\" [label=\"Influencia (NCA)\", color=\"green\"];\n}"
-  },
-  {
+output: "digraph  {\n  node [shape=circle, fontname=\"Calibri Bold\"];\n  edge [fontname=\"Calibri Bold\"];\n  \"Parâmetros de Cultivo (Passiflora)\" -> \"Padrões de EEG\" [label=\"PLS-SEM\", color=\"green\"];\n  \"Parâmetros de Cultivo (Passiflora)\" -> \"Concentração de Apigenina\" [label=\"NCA\", color=\"green\", style=\"dashed\"];\n  \"Concentração de Apigenina\" -> \"Padrões de EEG\" [label=\"Influencia (NCA)\", color=\"green\"];\n}"
+},
+{
 instruct: "Analisar",
 input: "correlação entre ECG e qualidade do sono",
-output: "digraph    {\n  node [shape=circle, fontname=\"Calibri Bold\"];\n  edge [fontname=\"Calibri Bold\"];\n  \"Variabilidade da Frequência Cardíaca (ECG)\" -> \"Qualidade do Sono\" [label=\"PLS-SEM\", color=\"darkorange\"];\n  \"Variabilidade da Frequência Cardíaca (ECG)\" -> \"Níveis de Estresse\" [label=\"NCA\", color=\"blue\"];\n  \"Níveis de Estresse\" -> \"Qualidade do Sono\" [label=\"Influenciam (NCA)\", color=\"blue\"];\n}"
-  },
-  {
+output: "digraph  {\n  node [shape=circle, fontname=\"Calibri Bold\"];\n  edge [fontname=\"Calibri Bold\"];\n  \"Variabilidade da Frequência Cardíaca (ECG)\" -> \"Qualidade do Sono\" [label=\"PLS-SEM\", color=\"darkorange\"];\n  \"Variabilidade da Frequência Cardíaca (ECG)\" -> \"Níveis de Estresse\" [label=\"NCA\", color=\"blue\"];\n  \"Níveis de Estresse\" -> \"Qualidade do Sono\" [label=\"Influenciam (NCA)\", color=\"blue\"];\n}"
+},
+{
 instruct: "Analisar correlação",
 input: "dados de ECG e cultivo de camomila",
-output: "digraph    {\n  node [shape=circle, fontname=\"Calibri Bold\"];\n  edge [fontname=\"Calibri Bold\"];\n  \"Parâmetros de Cultivo (Camomila)\" -> \"Variabilidade da Frequência Cardíaca (ECG)\" [label=\"PLS-SEM\", color=\"green\"];\n  \"Parâmetros de Cultivo (Camomila)\" -> \"Teor de Óleos Essenciais\" [label=\"NCA\", color=\"green\", style=\"dashed\"];\n  \"Teor de Óleos Essenciais\" -> \"Variabilidade da Frequência Cardíaca (ECG)\" [label=\"Influencia (NCA)\", color=\"green\"];\n}"
-  },
-  {
+output: "digraph  {\n  node [shape=circle, fontname=\"Calibri Bold\"];\n  edge [fontname=\"Calibri Bold\"];\n  \"Parâmetros de Cultivo (Camomila)\" -> \"Variabilidade da Frequência Cardíaca (ECG)\" [label=\"PLS-SEM\", color=\"green\"];\n  \"Parâmetros de Cultivo (Camomila)\" -> \"Teor de Óleos Essenciais\" [label=\"NCA\", color=\"green\", style=\"dashed\"];\n  \"Teor de Óleos Essenciais\" -> \"Variabilidade da Frequência Cardíaca (ECG)\" [label=\"Influencia (NCA)\", color=\"green\"];\n}"
+},
+{
 instruct: "Analisar",
 input: "correlação entre EDA e qualidade do sono",
-output: "digraph    {\n  node [shape=circle, fontname=\"Calibri Bold\"];\n  edge [fontname=\"Calibri Bold\"];\n  \"Condutância da Pele (EDA)\" -> \"Qualidade do Sono\" [label=\"PLS-SEM\", color=\"darkorange\"];\n  \"Condutância da Pele (EDA)\" -> \"Níveis de Ansiedade\" [label=\"NCA\", color=\"blue\"];\n  \"Níveis de Ansiedade\" -> \"Qualidade do Sono\" [label=\"Influenciam (NCA)\", color=\"blue\"];\n}"
-  },
-  {
+output: "digraph  {\n  node [shape=circle, fontname=\"Calibri Bold\"];\n  edge [fontname=\"Calibri Bold\"];\n  \"Condutância da Pele (EDA)\" -> \"Qualidade do Sono\" [label=\"PLS-SEM\", color=\"darkorange\"];\n  \"Condutância da Pele (EDA)\" -> \"Níveis de Ansiedade\" [label=\"NCA\", color=\"blue\"];\n  \"Níveis de Ansiedade\" -> \"Qualidade do Sono\" [label=\"Influenciam (NCA)\", color=\"blue\"];\n}"
+},
+{
 instruct: "Analisar correlação",
 input: "dados de EDA e cultivo de calêndula",
-output: "digraph    {\n  node [shape=circle, fontname=\"Calibri Bold\"];\n  edge [fontname=\"Calibri Bold\"];\n  \"Manejo do Cultivo (Calêndula)\" -> \"Condutância da Pele (EDA)\" [label=\"PLS-SEM\", color=\"green\"];\n  \"Manejo do Cultivo (Calêndula)\" -> \"Perfil de Terpenos\" [label=\"NCA\", color=\"green\", style=\"dashed\"];\n  \"Perfil de Terpenos\" -> \"Condutância da Pele (EDA)\" [label=\"Influencia (NCA)\", color=\"green\"];\n}"
-  },
-  {
+output: "digraph  {\n  node [shape=circle, fontname=\"Calibri Bold\"];\n  edge [fontname=\"Calibri Bold\"];\n  \"Manejo do Cultivo (Calêndula)\" -> \"Condutância da Pele (EDA)\" [label=\"PLS-SEM\", color=\"green\"];\n  \"Manejo do Cultivo (Calêndula)\" -> \"Perfil de Terpenos\" [label=\"NCA\", color=\"green\", style=\"dashed\"];\n  \"Perfil de Terpenos\" -> \"Condutância da Pele (EDA)\" [label=\"Influencia (NCA)\", color=\"green\"];\n}"
+},
+{
 instruct: "Analisar",
 input: "correlação entre eye-tracking e qualidade do sono",
-output: "digraph    {\n  node [shape=circle, fontname=\"Calibri Bold\"];\n  edge [fontname=\"Calibri Bold\"];\n  \"Padrões de Eye-Tracking\" -> \"Qualidade do Sono\" [label=\"PLS-SEM\", color=\"darkorange\"];\n  \"Padrões de Eye-Tracking\" -> \"Padrões de Sono\" [label=\"NCA\", color=\"blue\"];\n  \"Padrões de Sono\" -> \"Qualidade do Sono\" [label=\"Influenciam (NCA)\", color=\"blue\"];\n}"
-  },
-  {
+output: "digraph  {\n  node [shape=circle, fontname=\"Calibri Bold\"];\n  edge [fontname=\"Calibri Bold\"];\n  \"Padrões de Eye-Tracking\" -> \"Qualidade do Sono\" [label=\"PLS-SEM\", color=\"darkorange\"];\n  \"Padrões de Eye-Tracking\" -> \"Padrões de Sono\" [label=\"NCA\", color=\"blue\"];\n  \"Padrões de Sono\" -> \"Qualidade do Sono\" [label=\"Influenciam (NCA)\", color=\"blue\"];\n}"
+},
+{
 instruct: "Analisar correlação",
 input: "dados de eye-tracking e cultivo de equinácea",
-output: "digraph    {\n  node [shape=circle, fontname=\"Calibri Bold\"];\n  edge [fontname=\"Calibri Bold\"];\n  \"Condições de Cultivo (Equinácea)\" -> \"Padrões de Eye-Tracking\" [label=\"PLS-SEM\", color=\"green\"];\n  \"Condições de Cultivo (Equinácea)\" -> \"Composição Nutricional\" [label=\"NCA\", color=\"green\", style=\"dashed\"];\n  \"Composição Nutricional\" -> \"Padrões de Eye-Tracking\" [label=\"Influencia (NCA)\", color=\"green\"];\n}"
-  },
-  {
+output: "digraph  {\n  node [shape=circle, fontname=\"Calibri Bold\"];\n  edge [fontname=\"Calibri Bold\"];\n  \"Condições de Cultivo (Equinácea)\" -> \"Padrões de Eye-Tracking\" [label=\"PLS-SEM\", color=\"green\"];\n  \"Condições de Cultivo (Equinácea)\" -> \"Composição Nutricional\" [label=\"NCA\", color=\"green\", style=\"dashed\"];\n  \"Composição Nutricional\" -> \"Padrões de Eye-Tracking\" [label=\"Influencia (NCA)\", color=\"green\"];\n}"
+},
+{
 instruct: "Analisar",
 input: "influência da passiflora na qualidade do sono",
-output: "digraph    {\n  node [shape=circle, fontname=\"Calibri Bold\"];\n  edge [fontname=\"Calibri Bold\"];\n  \"Passiflora\" -> \"Qualidade do Sono\" [label=\"Melhora (PLS-SEM)\", color=\"blue\"];\n  \"Passiflora\" -> \"Níveis de Cortisol\" [label=\"Reduz (PLS-SEM)\", color=\"blue\", style=\"dashed\"];\n  \"Níveis de Cortisol\" -> \"Qualidade do Sono\" [label=\"Influencia (NCA)\", color=\"blue\"];\n}"
-  },
-  {
+output: "digraph  {\n  node [shape=circle, fontname=\"Calibri Bold\"];\n  edge [fontname=\"Calibri Bold\"];\n  \"Passiflora\" -> \"Qualidade do Sono\" [label=\"Melhora (PLS-SEM)\", color=\"blue\"];\n  \"Passiflora\" -> \"Níveis de Cortisol\" [label=\"Reduz (PLS-SEM)\", color=\"blue\", style=\"dashed\"];\n  \"Níveis de Cortisol\" -> \"Qualidade do Sono\" [label=\"Influencia (NCA)\", color=\"blue\"];\n}"
+},
+{
 instruct: "Analisar correlação",
 input: "dados de qualidade do sono e cultivo de passiflora",
-output: "digraph    {\n  node [shape=circle, fontname=\"Calibri Bold\"];\n  edge [fontname=\"Calibri Bold\"];\n  \"Parâmetros de Cultivo (Passiflora)\" -> \"Qualidade do Sono\" [label=\"PLS-SEM\", color=\"green\"];\n  \"Parâmetros de Cultivo (Passiflora)\" -> \"Teor de Harmina\" [label=\"NCA\", color=\"green\", style=\"dashed\"];\n  \"Teor de Harmina\" ->
+output: "digraph  {\n  node [shape=circle, fontname=\"Calibri Bold\"];\n  edge [fontname=\"Calibri Bold\"];\n  \"Parâmetros de Cultivo (Passiflora)\" -> \"Qualidade do Sono\" [label=\"PLS-SEM\", color=\"green\"];\n  \"Parâmetros de Cultivo (Passiflora)\" -> \"Teor de Harmina\" [label=\"NCA\", color=\"green\", style=\"dashed\"];\n  \"Teor de Harmina\" ->
 }
 ]
